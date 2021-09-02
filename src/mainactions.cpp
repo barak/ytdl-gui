@@ -1,3 +1,4 @@
+#include "readconfig.h"
 #include "mainactions.h"
 #include <string>
 #include <iostream>
@@ -9,6 +10,8 @@
 #include <cstdlib>
 #include <unistd.h>
 #include <QThread>
+#include <QFile>
+#include <QDebug>
 
 std::string whitespace = " ";
 std::string quote = "'";
@@ -25,7 +28,75 @@ mainActions::mainActions(QObject *parent) : QObject(parent)	{
 
         //connect defaults checkbox to blurring out of options
         connect(ui->defaultsCheck, &QCheckBox::stateChanged, window, &ytdl::changeVisibility);
+
+
+        // resume user settings
+        if (QFile(window->file_qstr).exists()) {
+            readConfig* user_settings = new readConfig(window->file_str);
+            user_settings->get_values();
+
+            //apply checkbox settings
+            bool_to_checkbox(user_settings->values[0], ui->defaultsCheck);
+            bool_to_checkbox(user_settings->values[1], ui->playlistCheck);
+
+            //apply dir setting
+            std::string stored_value = user_settings->values[2];
+            if (!stored_value.empty() && stored_value != "Location:") {
+                ui->lineBrowse->setText(QString::fromStdString(stored_value));
+            }
+
+            try {
+                //apply tab setting
+                ui->Tabs->setCurrentIndex(stoi(user_settings->values[3]));
+
+                //apply audio settings
+                num_to_button(ui->MQualityGroup, stoi(user_settings->values[4]), 4);
+                num_to_button(ui->MFormatGroup, stoi(user_settings->values[5]), 5);
+
+                //apply video settings
+                num_to_button(ui->VResGroup, stoi(user_settings->values[6]), 5);
+                num_to_button(ui->VFormatGroup, stoi(user_settings->values[7]), 4);
+            }
+
+             catch (const std::invalid_argument &e) {
+                qDebug() << "Invalid argument in config file:";
+                qDebug() << e.what() << "invalid argument";
+            }
+             catch (const std::out_of_range &e) {
+                qDebug() << "Invalid argument in config file:";
+                qDebug() << e.what()  << "out of range";
+            }
+             catch (const std::exception &e) {
+                qDebug() << "Invalid argument in config file:";
+                qDebug() << e.what() << "undefined error";
+            }
+
+        }
+
+
 }
+
+void mainActions::bool_to_checkbox(std::string input, QCheckBox* box) {
+    if (input == "yes") {
+        box->setCheckState(Qt::Checked);
+    }
+    else if (input == "no") {
+        box->setCheckState(Qt::Unchecked);
+    }
+    else {
+        qDebug() << "Invalid argument in config file";
+    }
+}
+
+void mainActions::num_to_button(QButtonGroup* group, int sel, int total) {
+    if ( -1 < sel && sel < total) {
+        group->button(sel)->setChecked(true);
+    }
+    else {
+        qDebug() << "Invalid argument in config file";
+    }
+}
+
 
 std::string QString_to_str(QString input) {
         std::string output = input.toUtf8().constData();
@@ -51,7 +122,7 @@ void ytdl::run_ytdl(std::string input) {
     //delete thread
     connect(download_instance, &mainCommand::finished, downloadThread, &QThread::quit);
     connect(this, &ytdl::userAccepted, download_instance, &QObject::deleteLater);
-    connect(this, &ytdl::userAccepted, downloadThread, &QObject::deleteLater);
+    connect(downloadThread, &QThread::finished, downloadThread, &QObject::deleteLater);
 
 
     //execute
@@ -130,6 +201,7 @@ void ytdl::changeVisibility(int state) {
 }
 
 void ytdl::printResult(int result_num) {
+        bool is_active = downloading->isActiveWindow();
         emit closeDownloading();
 
         if (result_num == 0) {
@@ -138,7 +210,7 @@ void ytdl::printResult(int result_num) {
                 success.setIcon(QMessageBox::Information);
                 success.setText("Download Succeeded");
 
-                if (no_feedback == false) {
+                if (!no_feedback && is_active) {
                     success.exec();
                 }
 
@@ -165,6 +237,7 @@ void ytdl::downloadAction() {
     std::string url_str = quote + QString_to_str(ui->lineURL->text()) + quote;
     std::string directory_str = quote + QString_to_str(ui->lineBrowse->text()) + "/%(title)s.%(ext)s" + quote;
     std::string parse_output = R"(stdbuf -o0 grep -oP '^\[download\].*?\K([0-9]+)')";
+    std::string thumbnail;
 
     //Youtube playlist support
     std::string playlist;
@@ -212,6 +285,7 @@ void ytdl::downloadAction() {
                             break;
                     case 2:
                             audio_format = "mp3";
+                            thumbnail = "--embed-thumbnail ";
                             break;
                     case 3:
                             audio_format = "opus";
@@ -240,7 +314,7 @@ void ytdl::downloadAction() {
             std::string command = ytdl_prog + " -x " + url_str + " -o " + directory_str \
                     + " --audio-format " + audio_format \
                     + " --audio-quality " + audio_quality \
-                    + " --ignore-config " + playlist + "--newline | " \
+                    + " --ignore-config " + playlist + thumbnail + "--newline | " \
                     + parse_output;
 
             this->run_ytdl(command);

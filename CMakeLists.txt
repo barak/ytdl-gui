@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.5)
+cmake_minimum_required(VERSION 3.9)
 
 project(youtubedl-gui LANGUAGES CXX)
 
@@ -12,11 +12,23 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 INCLUDE(GNUInstallDirs)
+INCLUDE(CheckIPOSupported)
 
 #Set default prefix to /usr
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
   set(CMAKE_INSTALL_PREFIX "/usr")
 endif()
+
+# check if compiler supports link time optmizations and enable it
+if(LINUX)
+  check_ipo_supported(RESULT result)
+    if (CMAKE_COMPILER_IS_GNUCXX) # clang lto with qt is broken.
+            if(result)
+            set(CMAKE_INTERPROCEDURAL_OPTIMIZATION TRUE)
+        endif()
+    endif()
+endif()
+
 
 # uninstall target
 if(NOT TARGET uninstall)
@@ -40,6 +52,7 @@ set(SRC
     src/mainactions.h
     src/maincommand.h
     src/ytdl.h
+    src/readconfig.h
 
     #cpp
     src/canceldownload.cpp
@@ -49,6 +62,7 @@ set(SRC
     src/mainactions.cpp
     src/maincommand.cpp
     src/ytdl.cpp
+    src/readconfig.cpp
 
     #ui
     src/downloadstatus.ui

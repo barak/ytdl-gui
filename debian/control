@@ -13,8 +13,8 @@ Vcs-Browser: https://salsa.debian.org/debian/ytdl-gui
 Package: youtubedl-gui
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}, youtube-dl
-Description: GUI on youtube-dl to download videos from a variety of sites
- Graphical interface to youtube-dl, the CLI for downloading videos
+Depends: ${misc:Depends}, ${shlibs:Depends}, yt-dlp
+Description: GUI on yt-dlp (ie, youtube-dl) to download videos from a variety of sites
+ Graphical interface to yt-dlp, the CLI for downloading videos
  from a variety of sites. Allows control of format, resolution, audio
  and video codecs, etc.

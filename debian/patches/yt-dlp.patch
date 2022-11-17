@@ -1,7 +1,18 @@
-Index: ytdl-gui/src/mainactions.cpp
+From: Andres Salomon <dilinger@queued.net>
+Date: Thu, 17 Nov 2022 01:27:39 -0500
+Subject: yt-dlp
+
+Patch to invoke yt-dlp instead of youtube-dl because it's the non-rusty fork.
+See https://bugs.debian.org/1024214
 ===================================================================
---- ytdl-gui.orig/src/mainactions.cpp
-+++ ytdl-gui/src/mainactions.cpp
+---
+ src/mainactions.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/mainactions.cpp b/src/mainactions.cpp
+index 8067888..ffc58d1 100644
+--- a/src/mainactions.cpp
++++ b/src/mainactions.cpp
 @@ -233,7 +233,7 @@ void ytdl::printResult(int result_num) {
  }
  

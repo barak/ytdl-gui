@@ -233,11 +233,12 @@ void ytdl::printResult(int result_num) {
 }
 
 void ytdl::downloadAction() {
-    std::string ytdl_prog = "youtube-dl 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+    std::string ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
     std::string url_str = quote + QString_to_str(ui->lineURL->text()) + quote;
     std::string directory_str = quote + QString_to_str(ui->lineBrowse->text()) + "/%(title)s.%(ext)s" + quote;
     std::string parse_output = R"(stdbuf -o0 grep -oP '^\[download\].*?\K([0-9]+)')";
     std::string thumbnail;
+    std::string embed_subs;
 
     //Youtube playlist support
     std::string playlist;
@@ -334,6 +335,7 @@ void ytdl::downloadAction() {
                     case 2:
                             video_format = "mp4";
                             audio_format = "m4a";
+                            embed_subs = "--embed-subs ";
                             break;
                     case 3:
                             video_format = "webm";
@@ -364,7 +366,7 @@ void ytdl::downloadAction() {
 
             std::string command = ytdl_prog + whitespace + url_str + " -o " + directory_str \
                     + " -f " + format_options \
-                    + " --ignore-config " + playlist + "--newline | " \
+                    + " --ignore-config " + playlist + embed_subs + "--newline | " \
                     + parse_output;
 
             this->run_ytdl(command);

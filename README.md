@@ -19,7 +19,7 @@ For a system based on Ubuntu 18.04 Bionic Beaver, 20.04 Focal Fossa or 21.04 Hir
 Then, you have to install the latest ```yt-dlp``` version using pip. Do the following:<br/>
 ```sudo pip3 install yt-dlp```
 ### Debian
-For a system running Debian 12 Bookworm (Testing as of now) or later, the application is in the distribution's standard repositories.<br/>
+For a system running Debian 12 Bookworm or later, the application is in the distribution's standard repositories.<br/>
 Simply run ```sudo apt install youtubedl-gui``` to install the GUI interface.<br/><br/>
 Then, make sure ```ffmpeg``` and ```python3-pip``` are on your system too.<br/>
 Finally, execute ```sudo pip3 install yt-dlp``` to get the latest version of ```yt-dlp``` on your system.
@@ -38,13 +38,13 @@ The application will scale automatically with the scaling factor chosen by the d
 
 ## Build From Source
 ### Dependencies
-To build this application from source, you need the basic development tools for the Qt5 framework, and a recent version of the ```youtube-dl``` binary for the application to compile and run on your system.<br/><br/>
+To build this application from source, you need the basic development tools for the Qt5 framework, and a recent version of the ```yt-dlp``` binary for the application to compile and run on your system.<br/><br/>
 Here is a list of build and runtime dependencies for arch linux:<br/>
 ```base-devel qt5-base ffmpeg yt-dlp```<br/>
 
 For debian-based systems (including ubuntu) here is a list of dependencies:<br/>
 ```build-essential cmake qtbase5-dev ffmpeg yt-dlp```<br/><br/>
-Since the version of ```yt-dlp``` is often not current on debian and ubuntu distros, I recommend you install it through ```pip3```(or from backports).
+Since the version of ```yt-dlp``` is often not current on debian and ubuntu distros, I recommend you install it through ```pip3``` (or from backports for Debian).
 
 ### Installing
 To install after having installed the correct dependencies:<br/><br/>

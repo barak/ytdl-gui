@@ -27,9 +27,7 @@ mainActions::mainActions(QObject *parent) : QObject(parent)	{
         connect(returnAction, &QShortcut::activated, ui->buttonDownload, &QPushButton::click);
 
         //connect defaults checkbox to blurring out of options
-        connect(ui->defaultsCheck, &QCheckBox::stateChanged, window, &ytdl::changeVisibility);
-
-
+        connect(ui->defaultsCheck, &QCheckBox::checkStateChanged, window, &ytdl::changeVisibility);
         // resume user settings
         if (QFile(window->file_qstr).exists()) {
             readConfig* user_settings = new readConfig(window->file_str);

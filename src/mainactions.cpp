@@ -365,7 +365,7 @@ void ytdl::downloadAction() {
 
             std::string command = ytdl_prog + whitespace + url_str + " -o " + directory_str \
                     + " -f " + format_options \
-                    + " --ignore-config " + playlist + embed_subs + "--newline | " \
+                    + " --ignore-config " + playlist + embed_subs + "--embed-metadata --newline | " \
                     + parse_output;
 
             this->run_ytdl(command);

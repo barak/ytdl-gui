@@ -337,6 +337,7 @@ void ytdl::downloadAction() {
                             break;
                     case 3:
                             video_format = "webm";
+                            embed_subs = "--embed-subs ";
                             break;
             }
 

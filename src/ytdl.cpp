@@ -7,6 +7,7 @@
 #include <iostream>
 #include <fstream>
 #include <QCloseEvent>
+#include <QStandardPaths>
 
 ytdl* ytdl::curr_window = nullptr;
 Ui::ytdl* ytdl::curr_ui = nullptr;
@@ -62,7 +63,7 @@ ytdl::ytdl(QWidget *parent)
     file_str = file_qstr.toUtf8().constData();
 
     //Setup text
-    QString downloads_dir = QDir::homePath() + "/Downloads";
+    QString downloads_dir = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
     if (QDir(downloads_dir).exists()) {
         ui->lineBrowse->setText(downloads_dir);
     }

@@ -4,7 +4,8 @@ A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork o
 
 
 ## Installation Instructions
-There is are packages of the original youtubedl-gui for arch-based linux distros (using the aur) and Debian based distro.
+There are packages of the original youtubedl-gui for arch-based linux distros (using the aur) and Debian based distro.
+If you prefer you can also build from sources (see below) or use flatpak to use this fork instead of the original youtubedl-gui.
 ### Arch linux and Manjaro
 On any arch system with an aur helper such as ```yay```:<br/>
 ```yay -S youtubedl-gui```<br/>
@@ -18,9 +19,9 @@ Simply run ```sudo apt install youtubedl-gui``` to install the GUI interface.<br
 Then, make sure ```ffmpeg``` and ```python3-pip``` are on your system too.<br/>
 Finally, execute ```sudo pip3 install yt-dlp``` to get the latest version of ```yt-dlp``` on your system.
 ### Flatpak
-It is also possible to install the application via Flatpak if there is no package for your distrubition.<br/>
-However, be aware that I am not responsible for its maintenance and that the install size will be an order of magnitude bigger than simply using a package or building from source. Please also note that the Flatpak seems to be abandoned too.<br/><br/>
-To install the application, run ```flatpak install flathub io.github.JaGoLi.ytdl_gui```
+It is also possible to install the application via Flatpak .<br/>
+The flatpak is currently being reviewed by Flathub team but you can allready install it from testing builds.<br/>
+To install the application, run ```flatpak install https://dl.flathub.org/build-repo/245799/page.codeberg.impromptux.ytdl-gui.flatpakref```.
 
 ## HiDPI Support
 This application does support HiDPI displays even though its size is fixed.

@@ -49,7 +49,6 @@
   </recommends>
   <requires>
     <display_length compare="ge">600</display_length>
-    <display_height compare="ge">200</display_height>
   </requires>
   <replaces>
     <id>io.github.JaGoLi.ytdl_gui</id>

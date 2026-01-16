@@ -20,7 +20,7 @@ Then, make sure ```ffmpeg``` and ```python3-pip``` are on your system too.<br/>
 Finally, execute ```sudo pip3 install yt-dlp``` to get the latest version of ```yt-dlp``` on your system.
 ### Flatpak
 It is also possible to install the application via Flatpak .<br/>
-The flatpak is currently being reviewed by Flathub team but you can allready install it from testing builds.<br/>
+The flatpak is currently being reviewed by Flathub team but you can already install it from testing builds.<br/>
 To install the application, run ```flatpak install https://dl.flathub.org/build-repo/245799/page.codeberg.impromptux.ytdl-gui.flatpakref```.
 
 ## HiDPI Support

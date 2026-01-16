@@ -49,6 +49,7 @@ ytdl::ytdl(QWidget *parent)
     ui->VResGroup->setId(ui->radio1080p, 2);
     ui->VResGroup->setId(ui->radio720p, 3);
     ui->VResGroup->setId(ui->radio480p, 4);
+    ui->VResGroup->setId(ui->radio360p, 5);
 
     //center on screen
     move(QGuiApplication::screens().at(0)->geometry().center() - frameGeometry().center());

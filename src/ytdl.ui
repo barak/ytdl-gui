@@ -275,7 +275,7 @@
             </property>
             <property name="maximumSize">
              <size>
-              <width>78</width>
+              <width>60</width>
               <height>16777215</height>
              </size>
             </property>
@@ -300,22 +300,6 @@
           <item>
            <widget class="QRadioButton" name="radio1080p">
             <property name="sizePolicy">
-             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>87</width>
-              <height>0</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>87</width>
-              <height>16777215</height>
-             </size>
             </property>
             <property name="text">
              <string>1080p</string>
@@ -342,6 +326,16 @@
            <widget class="QRadioButton" name="radio480p">
             <property name="text">
              <string>480p</string>
+            </property>
+            <attribute name="buttonGroup">
+             <string notr="true">VResGroup</string>
+            </attribute>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radio360p">
+            <property name="text">
+             <string>360p</string>
             </property>
             <attribute name="buttonGroup">
              <string notr="true">VResGroup</string>

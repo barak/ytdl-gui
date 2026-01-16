@@ -362,7 +362,6 @@ void ytdl::downloadAction() {
                             video_res = "360";
                             break;
             }
-            qDebug() << "debug: " << ui->VResGroup->checkedId();
 
             std::string format_options = quote + video_format + "[height=" + video_res \
                     + "]+" + audio_format + "/bestvideo[height<=" + video_res + "]+bestaudio" + quote;

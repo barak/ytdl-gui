@@ -53,7 +53,9 @@ If you want to contribute you can [clone the repo](https://codeberg.org/librewol
 
 ## TODO
 - [x] Migrate to Qt6
+- [x] Migrate from Youtube-dl to Yt-dlp
+- [x] Add other file resolutions (360p)
+- [ ] Make ytdl-gui compatible with both Youtube-dl and Yt-dlp
 - [ ] Show a notification when a download finish and the windows is in the background
 - [ ] Write metadata for audio files
 - [ ] Remove special characters from files names
-- [x] Add other file resolutions (360p)

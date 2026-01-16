@@ -47,3 +47,13 @@ To install after having installed the correct dependencies:<br/><br/>
 ```mkdir build && cd build```<br/>
 ```cmake .. && make```<br/>
 ```sudo make install```<br/>
+
+## Contributing
+If you want to contribute you can [clone the repo](https://codeberg.org/librewolf/source/fork) and open a pull request with a description of your changes.
+
+## TODO
+- [x] Migrate to Qt6
+- [ ] Show a notification when a download finish and the windows is in the background
+- [ ] Write metadata for audio files
+- [ ] Remove special characters from files names
+- [ ] Add other file resolutions

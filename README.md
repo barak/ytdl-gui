@@ -56,4 +56,4 @@ If you want to contribute you can [clone the repo](https://codeberg.org/librewol
 - [ ] Show a notification when a download finish and the windows is in the background
 - [ ] Write metadata for audio files
 - [ ] Remove special characters from files names
-- [ ] Add other file resolutions
+- [x] Add other file resolutions (360p)

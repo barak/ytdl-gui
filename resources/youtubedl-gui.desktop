@@ -1,6 +1,6 @@
 [Desktop Entry]
 Name=Youtube Downloader
-Exec=/usr/bin/youtubedl-gui
+Exec=youtubedl-gui
 Icon=youtubedl-gui
 Type=Application
 Categories=AudioVideo;Utility

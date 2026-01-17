@@ -50,9 +50,6 @@
   <requires>
     <display_length compare="ge">600</display_length>
   </requires>
-  <replaces>
-    <id>io.github.JaGoLi.ytdl_gui</id>
-  </replaces>
   <keywords>
     <keyword>AudioVideo</keyword>
     <keyword>VideoDownloader</keyword>

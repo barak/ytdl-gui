@@ -52,7 +52,7 @@ mainActions::mainActions(QObject *parent) : QObject(parent)	{
                 num_to_button(ui->MFormatGroup, stoi(user_settings->values[5]), 5);
 
                 //apply video settings
-                num_to_button(ui->VResGroup, stoi(user_settings->values[6]), 5);
+                num_to_button(ui->VResGroup, stoi(user_settings->values[6]), 6);
                 num_to_button(ui->VFormatGroup, stoi(user_settings->values[7]), 4);
             }
 

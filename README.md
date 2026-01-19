@@ -49,12 +49,14 @@ To install after having installed the correct dependencies:<br/><br/>
 ```sudo make install```<br/>
 
 ## Contributing
-If you want to contribute you can [clone the repo](https://codeberg.org/librewolf/source/fork) and open a pull request with a description of your changes.
+If you want to contribute you can [fork the repo](https://codeberg.org/impromptux/ytdl-gui/fork) and open a pull request with a description of your changes.
+If you have a suggestion or a bug to report you can [open an issue](https://codeberg.org/impromptux/ytdl-gui/issues)
 
 ## TODO
 - [x] Migrate to Qt6
 - [x] Migrate from Youtube-dl to Yt-dlp
 - [x] Add other file resolutions (360p)
+- [ ] Add other languages than english
 - [ ] Make ytdl-gui compatible with both Youtube-dl and Yt-dlp
 - [ ] Show a notification when a download finish and the windows is in the background
 - [ ] Write metadata for audio files

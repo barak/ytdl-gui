@@ -7,6 +7,7 @@
   <name>Yt Downloader</name>
   <name xml:lang="fr">Téléchargeur de vidéos</name>
   <summary>Download videos and music from various sources.</summary>
+  <summary xml:lang="fr">Télécharger des vidéos et de la musique à partir de sites web.</summary>
   <url type="homepage">https://codeberg.org/impromptux/ytdl-gui</url>
   <url type="bugtracker">https://codeberg.org/impromptux/ytdl-gui/issues</url>
   <url type="vcs-browser">https://codeberg.org/impromptux/ytdl-gui</url>
@@ -32,12 +33,12 @@
   <launchable type="desktop-id">page.codeberg.impromptux.ytdl-gui.desktop</launchable>
   <screenshots>
     <screenshot type="default">
-      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/04407666f3187dfa68721f0285704d17060f7216/resources/screenshot2.png</image>
+      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/11630448e725ba748a9115215e0381a36638fffc/resources/screenshot2.png</image>
       <caption>The main window of the app. (Video tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Vidéo)</caption>
     </screenshot>
     <screenshot>
-      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/04407666f3187dfa68721f0285704d17060f7216/resources/screenshot1.png</image>
+      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/d23123e4b8c6801b330ec58d9890b5939cb75b4f/resources/screenshot1.png</image>
       <caption>The main window of the app. (Audio tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Audio)</caption>
     </screenshot>
@@ -57,15 +58,9 @@
     <keyword>Utility</keyword>
   </keywords>
   <releases>
-        <release version="4.0" date="2026-01-11">
+        <release version="4.1" date="2026-01-21">
         <description>
-            <p>This release features several major improvements:</p>
-               <p>Embed subtitles in videos when possible.</p>
-               <p>Download metadata of videos.</p>
-               <p>Include chapters in some videos.</p>
-               <p>Migration from youtube-dl to yt-dlp backend that support several new features and sources</p>
-               <p>Migration from Qt5 to Qt6.</p>
-            <p>It is also the first release of this fork.</p>
+            <p>Add 360p format support.</p>
         </description>
         </release>
     </releases>

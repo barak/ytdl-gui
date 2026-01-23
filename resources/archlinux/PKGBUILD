@@ -1,7 +1,7 @@
 # Maintainer: Antoine Impromptux <impromptux (a) mailo dot com>
 pkgname=youtubedl-gui
 _pkgname=ytdl-gui
-pkgver=4.0
+pkgver=4.1
 pkgrel=1
 arch=('x86_64'
       'aarch64')

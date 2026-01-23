@@ -7,8 +7,8 @@ arch=('x86_64'
       'aarch64')
 license=('GPL3')
 pkgdesc="Download videos and audio from various sources(1000+) including YouTube."
-source=("https://codeberg.org/impromptux/ytdl-gui/archive/3995875896652772a4caf83de9ad7e3279010ce8.zip")
-sha256sums=('f732f1d3b4b586f211926c07a7468ea6a7768b6b3070c828548b9257998b21ac')
+source=("https://codeberg.org/impromptux/ytdl-gui/archive/v4.1.zip")
+sha256sums=('259b2783cd69bdefb67f6416bfa2d18cdcb59fd060bab295763e16a24dd23e5c')
 provides=("youtubedl-gui")
 conflicts=("youtubedl-gui")
 makedepends=("cmake")

@@ -210,6 +210,8 @@ void ytdl::printResult(int result_num) {
 
                 if (!no_feedback && is_active) {
                     success.exec();
+                } else {
+                    system("notify-send --icon youtubedl-gui \"Download succeded\"");
                 }
 
                 emit userAccepted();

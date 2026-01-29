@@ -9,6 +9,9 @@
 #include <QCloseEvent>
 #include <QStandardPaths>
 
+#include <QCoreApplication>
+#include <QTranslator>
+
 ytdl* ytdl::curr_window = nullptr;
 Ui::ytdl* ytdl::curr_ui = nullptr;
 
@@ -93,7 +96,7 @@ Ui::ytdl* ytdl::getUiInstance() {
 //slots function
 void ytdl::browseAction() {
 
-    QString user_dir = QFileDialog::getExistingDirectory(this, "Select a folder", QDir::homePath());
+    QString user_dir = QFileDialog::getExistingDirectory(this, QCoreApplication::tr("Select a folder"), QDir::homePath());
     if (!user_dir.isEmpty()) {
         ui->lineBrowse->setText(user_dir);
     }

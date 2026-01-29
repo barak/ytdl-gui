@@ -2,8 +2,6 @@ cmake_minimum_required(VERSION 3.16)
 
 project(youtubedl-gui LANGUAGES CXX)
 
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
-
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
@@ -18,6 +16,9 @@ INCLUDE(CheckIPOSupported)
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
   set(CMAKE_INSTALL_PREFIX "/usr")
 endif()
+
+
+add_definitions(-DYTDL_GUI_DATA_DIR="${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_DATAROOTDIR}/ytdl-gui/")
 
 # check if compiler supports link time optmizations and enable it
 if(LINUX)
@@ -89,6 +90,14 @@ endif()
 target_link_libraries(youtubedl-gui PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 install(TARGETS youtubedl-gui RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+set(TRANSLATIONS
+    locales/ytdl-gui_fr.qm
+    # Add other translation files here
+)
+
+foreach(translation_file ${TRANSLATIONS})
+    install(FILES ${translation_file} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/ytdl-gui/locales)
+endforeach()
 
 install(FILES icons/16x16.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/16x16/apps

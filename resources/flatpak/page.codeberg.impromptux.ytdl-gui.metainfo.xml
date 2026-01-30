@@ -58,10 +58,21 @@
     <keyword>Utility</keyword>
   </keywords>
   <releases>
+        <release version="4.2" date="2026-01-30">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.2</url>
+          <description>
+            <ul>
+              <li>Show translation when download finish and window is in background.</li>
+              <li>Add translations support</li>
+              <li>Add French translation</li>
+            </ul>
+          </description>
+        </release>
         <release version="4.1" date="2026-01-21">
-        <description>
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.1</url>
+          <description>
             <p>Add 360p format support.</p>
-        </description>
+          </description>
         </release>
     </releases>
 

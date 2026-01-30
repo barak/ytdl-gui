@@ -52,9 +52,10 @@ If you have a suggestion or a bug to report you can [open an issue](https://code
 ## TODO
 - [x] Migrate to Qt6
 - [x] Migrate from Youtube-dl to Yt-dlp
-- [x] Add other file resolutions (360p)
-- [ ] Add other languages than english
+- [x] Add other file resolutions (360p)<br/>
+- [x]Add other languages than english
+  - [x] French 
 - [ ] Make ytdl-gui compatible with both Youtube-dl and Yt-dlp
-- [ ] Show a notification when a download finish and the windows is in the background
+- [x] Show a notification when a download finish and the windows is in the background
 - [ ] Write metadata for audio files
 - [ ] Remove special characters from files names

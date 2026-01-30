@@ -57,16 +57,16 @@ mainActions::mainActions(QObject *parent) : QObject(parent)	{
             }
 
              catch (const std::invalid_argument &e) {
-                qDebug() << "Invalid argument in config file:";
-                qDebug() << e.what() << "invalid argument";
+                qDebug() << QCoreApplication::tr("Invalid argument in config file:");
+                qDebug() << e.what() << QCoreApplication::tr("invalid argument");
             }
              catch (const std::out_of_range &e) {
-                qDebug() << "Invalid argument in config file:";
-                qDebug() << e.what()  << "out of range";
+                qDebug() << QCoreApplication::tr("Invalid argument in config file:");
+                qDebug() << e.what()  << QCoreApplication::tr("out of range");
             }
              catch (const std::exception &e) {
-                qDebug() << "Invalid argument in config file:";
-                qDebug() << e.what() << "undefined error";
+                qDebug() << QCoreApplication::tr("Invalid argument in config file:");
+                qDebug() << e.what() << QCoreApplication::tr("undefined error");
             }
 
         }
@@ -82,7 +82,7 @@ void mainActions::bool_to_checkbox(std::string input, QCheckBox* box) {
         box->setCheckState(Qt::Unchecked);
     }
     else {
-        qDebug() << "Invalid argument in config file";
+        qDebug() << QCoreApplication::tr("Invalid argument in config file");
     }
 }
 
@@ -91,7 +91,7 @@ void mainActions::num_to_button(QButtonGroup* group, int sel, int total) {
         group->button(sel)->setChecked(true);
     }
     else {
-        qDebug() << "Invalid argument in config file";
+        qDebug() << QCoreApplication::tr("Invalid argument in config file");
     }
 }
 
@@ -206,12 +206,12 @@ void ytdl::printResult(int result_num) {
                 QMessageBox success;
                 success.setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
                 success.setIcon(QMessageBox::Information);
-                success.setText("Download Succeeded");
+                success.setText(QCoreApplication::tr("Download Succeeded"));
 
                 if (!no_feedback && is_active) {
                     success.exec();
                 } else {
-                    system("notify-send --icon youtubedl-gui \"Download succeded\"");
+                    system("notify-send --icon youtubedl-gui \"Download succeded\" >/dev/null 2>&1 &");
                 }
 
                 emit userAccepted();

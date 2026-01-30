@@ -7,6 +7,8 @@
 #include <sys/wait.h>
 #include <QDebug>
 
+#include <QCoreApplication>
+
 
 mainCommand::mainCommand(std::string args) {
     //setup args
@@ -22,7 +24,7 @@ mainCommand::mainCommand(std::string args) {
 
 void mainCommand::download() {
     //output command before exec
-    qDebug() << "[INFO] Yt-dlp command: " << ytdl_command;
+    qDebug() << QCoreApplication::tr("[INFO] Yt-dlp command: ") << ytdl_command;
 
     //remove temp files
     remove("/tmp/ytdl_prg");
@@ -51,7 +53,7 @@ void mainCommand::processResult(int result_num, QProcess::ExitStatus result_enum
     }
 
     if (result_enum != 0) {
-        qDebug() << "[ERROR] QProcess failed with error code: " << result_num;
+        qDebug() << QCoreApplication::tr("[ERROR] QProcess failed with error code: ") << result_num;
         errors = 1;
     }
 

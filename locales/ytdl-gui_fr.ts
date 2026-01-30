@@ -11,6 +11,54 @@
         <source>Select a folder</source>
         <translation>Sélectionnez un dossier</translation>
     </message>
+    <message>
+        <source>Cancel download in progress?</source>
+        <translation>Annuler le téléchargement en cours?</translation>
+    </message>
+    <message>
+        <source>Saving and converting...</source>
+        <translation>Enregistrement et conversion...</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Progression</translation>
+    </message>
+    <message>
+        <source>Invalid argument in config file:</source>
+        <translation>Erreur dans le fichier de configuration:</translation>
+    </message>
+    <message>
+        <source>invalid argument</source>
+        <translation>Argument invalide</translation>
+    </message>
+    <message>
+        <source>out of range</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>undefined error</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Invalid argument in config file</source>
+        <translation>Erreur dans le fichier de configuration</translation>
+    </message>
+    <message>
+        <source>Download Succeeded</source>
+        <translation>Téléchargement effectué</translation>
+    </message>
+    <message>
+        <source>Download succeded</source>
+        <translation>Téléchargement effectué</translation>
+    </message>
+    <message>
+        <source>[INFO] Yt-dlp command: </source>
+        <translation>[INFO] Command de yt-dlp: </translation>
+    </message>
+    <message>
+        <source>[ERROR] QProcess failed with error code: </source>
+        <translation>[ERROR] Le QProcess a échoué avec le code d’erreur: </translation>
+    </message>
 </context>
 <context>
     <name>downloadStatus</name>

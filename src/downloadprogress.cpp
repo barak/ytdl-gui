@@ -62,6 +62,6 @@ void downloadProgress::updateStatus() {
         sleep(1);
     }
 
-    download_ui->progressBar->setFormat("Saving and converting...");
+    download_ui->progressBar->setFormat(QCoreApplication::tr("Saving and converting..."));
     emit finished();
 }

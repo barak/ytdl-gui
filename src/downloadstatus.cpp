@@ -8,7 +8,7 @@ downloadStatus::downloadStatus(QWidget *parent) :
     download_ui(new Ui::downloadStatus)
 {
     download_ui->setupUi(this);
-    this->setWindowTitle("Progress");
+    this->setWindowTitle(QCoreApplication::tr("Progress"));
     this->setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
 
     //add minimize button

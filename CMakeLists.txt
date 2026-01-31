@@ -92,6 +92,7 @@ target_link_libraries(youtubedl-gui PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 install(TARGETS youtubedl-gui RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 set(TRANSLATIONS
     locales/ytdl-gui_fr.qm
+    locales/ytdl-gui_de.qm
     # Add other translation files here
 )
 

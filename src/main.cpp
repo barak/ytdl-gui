@@ -14,21 +14,30 @@ int main(int argc, char *argv[])
     QLocale locale = QLocale::system();
     qDebug() << "Current locale:" << locale.name();
     QTranslator translator;
-    QString localePath = QString(YTDL_GUI_DATA_DIR)+"locales/ytdl-gui_fr.qm" ;
-
-    qDebug() << "Loading locale: "<< localePath;
-    if (locale.name() == "fr_BE" or locale.name() == "fr_FR" or locale.name() == "fr_CA" or locale.name() == "fr") {
+    QString language = locale.languageToString(locale.language());
+    qDebug() << "Current language:" << language;
+    QString localeID = "en";
+    if (language == "French") {
+        localeID = "fr";
+    }else if (language == "German"){
+        localeID = "de";
+    }
+    qDebug() << "Chosen locale:" << localeID;
+    if (localeID != "en"){
+        QString localePath = QString(YTDL_GUI_DATA_DIR)+"locales/ytdl-gui_"+localeID+".qm" ;
+        qDebug() << "Loading locale:"<< localePath;
         if (!translator.load(localePath)) {
             qWarning() << "Failed to load translation file from installation path, will try from some other path.";
-            if (!translator.load("/usr/share/ytdl-gui/locales/ytdl-gui_fr.qm")) {
-                if (!translator.load("/usr/local/share/ytdl-gui/locales/ytdl-gui_fr.qm")) {
-                    if (!translator.load("locales/ytdl-gui_fr.qm")) {
+            if (!translator.load("/usr/share/ytdl-gui/locales/ytdl-gui_"+localeID+".qm")) {
+                if (!translator.load("/usr/local/share/ytdl-gui/locales/ytdl-gui_"+localeID+".qm")) {
+                    if (!translator.load("locales/ytdl-gui_"+localeID+".qm")) {
                         qWarning() << "Failed to load translation file.";
                     }
                 }
             }
         }
     }
+
     a.installTranslator(&translator);
     ytdl w;
     mainActions q;

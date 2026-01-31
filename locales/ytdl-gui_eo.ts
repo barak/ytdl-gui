@@ -199,7 +199,7 @@
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Elŝutu</translation>
     </message>
 </context>
 </TS>

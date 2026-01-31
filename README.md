@@ -3,6 +3,7 @@ A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork o
 [![Get it on Flathub!](https://flathub.org/api/badge)](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui) <br/>
 ![youtubedl-gui-screenshot.png](https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/youtubedl-gui-screenshot-3.0.png)<br/>
 
+
 ## Installation Instructions
 There are packages of the original youtubedl-gui for arch-based linux distros (using the aur) and Debian based distro.
 If you prefer you can also build from sources (see below) or use flatpak to use this fork instead of the original youtubedl-gui.
@@ -53,8 +54,8 @@ If you have a suggestion or a bug to report you can [open an issue](https://code
 - [x] Migrate to Qt6
 - [x] Migrate from Youtube-dl to Yt-dlp
 - [x] Add other file resolutions (360p)<br/>
-- [x]Add other languages than english
-  - [x] French 
+- [x]Add other languages than english<br/>
+[![État de la traduction](https://translate.codeberg.org/widget/ytdl-gui/ytdl-gui/multi-auto.svg)](https://translate.codeberg.org/engage/ytdl-gui/)<br/>
 - [ ] Make ytdl-gui compatible with both Youtube-dl and Yt-dlp
 - [x] Show a notification when a download finish and the windows is in the background
 - [ ] Write metadata for audio files

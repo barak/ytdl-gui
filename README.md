@@ -31,12 +31,12 @@ The application will scale automatically with the scaling factor chosen by the d
 
 ## Build From Source
 ### Dependencies
-To build this application from source, you need the basic development tools for the Qt5 framework, and a recent version of the ```yt-dlp``` binary for the application to compile and run on your system.<br/><br/>
+To build this application from source, you need the basic development tools for the Qt6 framework, and a recent version of the ```yt-dlp``` binary for the application to compile and run on your system.<br/><br/>
 Here is a list of build and runtime dependencies for arch linux:<br/>
 ```base-devel qt6-base ffmpeg yt-dlp```<br/>
 
 For debian-based systems (including ubuntu) here is a list of dependencies:<br/>
-```build-essential cmake qt-base6-dev ffmpeg yt-dlp```<br/><br/>
+```build-essential cmake qt6-base-dev ffmpeg yt-dlp```<br/><br/>
 Since the version of ```yt-dlp``` is often not current on debian and ubuntu distros, I recommend you install it through ```pip3``` (or from backports for Debian).
 
 ### Installing

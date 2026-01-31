@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>Cancel download in progress?</source>
-        <translation>Annuler le téléchargement en cours?</translation>
+        <translation>Annuler le téléchargement en cours ?</translation>
     </message>
     <message>
         <source>Saving and converting...</source>

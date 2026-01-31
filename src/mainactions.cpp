@@ -211,7 +211,7 @@ void ytdl::printResult(int result_num) {
                 if (!no_feedback && is_active) {
                     success.exec();
                 } else {
-                    system("notify-send --icon youtubedl-gui \"Download succeded\" >/dev/null 2>&1 &");
+                    system("notify-send --icon youtubedl-gui \"Yt Downloader\" \"Download succeded\" >/dev/null 2>&1 &");
                 }
 
                 emit userAccepted();

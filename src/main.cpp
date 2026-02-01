@@ -21,6 +21,8 @@ int main(int argc, char *argv[])
         localeID = "fr";
     }else if (language == "German"){
         localeID = "de";
+    }else if (language == "Spanish"){
+        localeID = "es";
     }
     qDebug() << "Chosen locale:" << localeID;
     if (localeID != "en"){

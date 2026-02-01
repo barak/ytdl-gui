@@ -55,6 +55,10 @@
         <source>Select a folder</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>downloadStatus</name>

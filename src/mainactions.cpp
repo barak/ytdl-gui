@@ -221,7 +221,7 @@ void ytdl::printResult(int result_num) {
                 QMessageBox fail;
                 fail.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
                 fail.setIcon(QMessageBox::Critical);
-                fail.setText("Failed! Recheck input for errors.");
+                fail.setText(QCoreApplication::tr("Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats."));
 
                 if (no_feedback == false) {
                     fail.exec();

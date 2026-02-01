@@ -237,10 +237,10 @@ void ytdl::downloadAction() {
     std::string embed_metadata;
     if (!system("which yt-dlp > /dev/null 2>&1")){
         ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
-        embed_metadata = "--embed-metadata";
+        embed_metadata = "--embed-metadata ";
     } else {
         ytdl_prog = "youtube-dl 2> /tmp/ytdl_stderr --no-warnings --all-subs";
-        embed_metadata = "";
+        embed_metadata = " ";
     }
     std::string url_str = quote + QString_to_str(ui->lineURL->text()) + quote;
     std::string directory_str = quote + QString_to_str(ui->lineBrowse->text()) + "/%(title)s.%(ext)s" + quote;

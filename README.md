@@ -55,8 +55,8 @@ If you have a suggestion or a bug to report you can [open an issue](https://code
 - [x] Migrate from Youtube-dl to Yt-dlp
 - [x] Add other file resolutions (360p)<br/>
 - [x]Add other languages than english<br/>
-[![État de la traduction](https://translate.codeberg.org/widget/ytdl-gui/ytdl-gui/multi-auto.svg)](https://translate.codeberg.org/engage/ytdl-gui/)<br/>
-- [ ] Make ytdl-gui compatible with both Youtube-dl and Yt-dlp
+[![Translations progress](https://translate.codeberg.org/widget/ytdl-gui/ytdl-gui/multi-auto.svg)](https://translate.codeberg.org/engage/ytdl-gui/)<br/>
+- [x] Make ytdl-gui compatible with both Youtube-dl and Yt-dlp
 - [x] Show a notification when a download finish and the windows is in the background
-- [ ] Write metadata for audio files
+- [x] Write metadata for audio files
 - [ ] Remove special characters from files names

@@ -53,15 +53,15 @@
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
-        <translation>[INFO] Command de yt-dlp: </translation>
+        <translation>[INFO] Commande de yt-dlp&#xa0;: </translation>
     </message>
     <message>
         <source>[ERROR] QProcess failed with error code: </source>
-        <translation>[ERROR] Le QProcess a échoué avec le code d’erreur: </translation>
+        <translation>[ERROR] Le QProcess a échoué avec le code d’erreur&#xa0;: </translation>
     </message>
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
-        <translation type="unfinished"></translation>
+        <translation>Le téléchargement a échoué. Si l’URL que vous avez fournie est correcte, réessayez avec d’autres résolutions ou formats.</translation>
     </message>
 </context>
 <context>
@@ -79,7 +79,7 @@
     <name>ytdl</name>
     <message>
         <source>ytdl</source>
-        <translation type="unfinished"></translation>
+        <translation>ytdl</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>

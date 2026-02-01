@@ -1,4 +1,4 @@
-#include <QDialog>
+//#include <QDialog>
 #include <iostream>
 #include <fstream>
 #include <sstream>

@@ -102,22 +102,23 @@ endforeach()
 
 install(FILES icons/16x16.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/16x16/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/32x32.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/32x32/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/64x64.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/64x64/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/128x128.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/128x128/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/256x256.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/256x256/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/512x512.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/512x512/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 
 install(FILES resources/youtubedl-gui.desktop
-    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
+    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications
+    RENAME page.codeberg.impromptux.ytdl-gui.desktop)

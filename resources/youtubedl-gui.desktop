@@ -1,7 +1,7 @@
 [Desktop Entry]
 Name=Youtube Downloader
 Exec=youtubedl-gui
-Icon=youtubedl-gui
+Icon=page.codeberg.impromptux.ytdl-gui
 Type=Application
 Categories=AudioVideo;Utility
 Comment=Download Youtube videos to local audio or video files.

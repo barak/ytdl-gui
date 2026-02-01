@@ -204,14 +204,14 @@ void ytdl::printResult(int result_num) {
 
         if (result_num == 0) {
                 QMessageBox success;
-                success.setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
+                success.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
                 success.setIcon(QMessageBox::Information);
                 success.setText(QCoreApplication::tr("Download Succeeded"));
 
                 if (!no_feedback && is_active) {
                     success.exec();
                 } else {
-                    system("notify-send --icon youtubedl-gui \"Yt Downloader\" \"Download succeded\" >/dev/null 2>&1 &");
+                    system("notify-send --icon page.codeberg.impromptux.ytdl-gui \"Yt Downloader\" \"Download succeded\" >/dev/null 2>&1 &");
                 }
 
                 emit userAccepted();
@@ -219,7 +219,7 @@ void ytdl::printResult(int result_num) {
         }
         else {
                 QMessageBox fail;
-                fail.setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
+                fail.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
                 fail.setIcon(QMessageBox::Critical);
                 fail.setText("Failed! Recheck input for errors.");
 
@@ -233,14 +233,22 @@ void ytdl::printResult(int result_num) {
 }
 
 void ytdl::downloadAction() {
-    std::string ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+    std::string ytdl_prog;
+    std::string embed_metadata;
+    if (system("which yt-dlp > /dev/null 2>&1")){
+        ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+        embed_metadata = "--embed-metadata";
+    } else {
+        ytdl_prog = "youtube-dl 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+        embed_metadata = "";
+    }
     std::string url_str = quote + QString_to_str(ui->lineURL->text()) + quote;
     std::string directory_str = quote + QString_to_str(ui->lineBrowse->text()) + "/%(title)s.%(ext)s" + quote;
     std::string parse_output = R"(stdbuf -o0 grep -oP '^\[download\].*?\K([0-9]+)')";
     std::string thumbnail;
     std::string embed_subs;
 
-    //Youtube playlist support
+    //Playlist support
     std::string playlist;
     if (ui->playlistCheck->isChecked()) {
         playlist = "";
@@ -370,7 +378,7 @@ void ytdl::downloadAction() {
 
             std::string command = ytdl_prog + whitespace + url_str + " -o " + directory_str \
                     + " -f " + format_options \
-                    + " --ignore-config " + playlist + embed_subs + "--embed-metadata --newline | " \
+                    + " --ignore-config " + playlist + embed_subs + embed_metadata + "--newline | " \
                     + parse_output;
 
             this->run_ytdl(command);

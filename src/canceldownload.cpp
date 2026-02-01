@@ -8,5 +8,5 @@ cancelDownload::cancelDownload(QWidget *parent) : QMessageBox(parent)
     this->setDefaultButton(QMessageBox::No);
     this->setText(QCoreApplication::tr("Cancel download in progress?"));
     this->setIcon(QMessageBox::Question);
-    this->setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
+    this->setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
 }

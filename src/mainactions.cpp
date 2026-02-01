@@ -235,7 +235,7 @@ void ytdl::printResult(int result_num) {
 void ytdl::downloadAction() {
     std::string ytdl_prog;
     std::string embed_metadata;
-    if (system("which yt-dlp > /dev/null 2>&1")){
+    if (!system("which yt-dlp > /dev/null 2>&1")){
         ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
         embed_metadata = "--embed-metadata";
     } else {

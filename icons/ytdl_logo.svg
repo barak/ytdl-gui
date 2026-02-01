@@ -33,7 +33,8 @@
        gradientUnits="userSpaceOnUse" />
   </defs>
   <g
-     id="layer1">
+     id="layer1"
+     transform="matrix(0.854852,0,0,0.854852,5.2457862,5.3151284)">
     <circle
        style="fill:#ff2424;fill-opacity:1;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round"
        id="path1"

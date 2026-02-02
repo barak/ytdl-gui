@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>undefined error</source>
-        <translation type="unfinished"></translation>
+        <translation>Erreur non définie</translation>
     </message>
     <message>
         <source>Invalid argument in config file</source>

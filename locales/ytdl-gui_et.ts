@@ -37,15 +37,15 @@
     </message>
     <message>
         <source>undefined error</source>
-        <translation type="unfinished"></translation>
+        <translation>määratlemata viga</translation>
     </message>
     <message>
         <source>Invalid argument in config file</source>
-        <translation type="unfinished"></translation>
+        <translation>Vigane argument seadistuste failis</translation>
     </message>
     <message>
         <source>Download Succeeded</source>
-        <translation type="unfinished"></translation>
+        <translation>Allalaadimine õnnestus</translation>
     </message>
     <message>
         <source>Download succeded</source>
@@ -53,157 +53,157 @@
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
-        <translation type="unfinished"></translation>
+        <translation>[INFO] Yt-dlp käsk: </translation>
     </message>
     <message>
         <source>[ERROR] QProcess failed with error code: </source>
-        <translation type="unfinished"></translation>
+        <translation>[ERROR] QProcess lõpetas töö veakoodiga: </translation>
     </message>
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ei õnnestunud! Kontrolli sisendist võimalike vigade osas. Kui etteantud võrguaadress on õige, siis proovi muid resolutsioone ja vorminguid.</translation>
     </message>
 </context>
 <context>
     <name>downloadStatus</name>
     <message>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaade</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Laadin alla...</translation>
     </message>
 </context>
 <context>
     <name>ytdl</name>
     <message>
         <source>ytdl</source>
-        <translation type="unfinished"></translation>
+        <translation>ytdl</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Muusika&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation type="unfinished"></translation>
+        <translation>Heliriba</translation>
     </message>
     <message>
         <source>Quality:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kvaliteet:</translation>
     </message>
     <message>
         <source>Best</source>
-        <translation type="unfinished"></translation>
+        <translation>Parim</translation>
     </message>
     <message>
         <source>Good</source>
-        <translation type="unfinished"></translation>
+        <translation>Hea</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Keskmine</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>Madal</translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Vorming:</translation>
     </message>
     <message>
         <source>AAC</source>
-        <translation type="unfinished"></translation>
+        <translation>AAC</translation>
     </message>
     <message>
         <source>OGG</source>
-        <translation type="unfinished"></translation>
+        <translation>OGG</translation>
     </message>
     <message>
         <source>MP3</source>
-        <translation type="unfinished"></translation>
+        <translation>MP3</translation>
     </message>
     <message>
         <source>OPUS</source>
-        <translation type="unfinished"></translation>
+        <translation>OPUS</translation>
     </message>
     <message>
         <source>WAV</source>
-        <translation type="unfinished"></translation>
+        <translation>WAV</translation>
     </message>
     <message>
         <source>Video</source>
-        <translation type="unfinished"></translation>
+        <translation>Videoriba</translation>
     </message>
     <message>
         <source>Max Resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>Suurim resolutsioon:</translation>
     </message>
     <message>
         <source>4K</source>
-        <translation type="unfinished"></translation>
+        <translation>4K</translation>
     </message>
     <message>
         <source>1440p</source>
-        <translation type="unfinished"></translation>
+        <translation>1440p</translation>
     </message>
     <message>
         <source>1080p</source>
-        <translation type="unfinished"></translation>
+        <translation>1080p</translation>
     </message>
     <message>
         <source>720p</source>
-        <translation type="unfinished"></translation>
+        <translation>720p</translation>
     </message>
     <message>
         <source>480p</source>
-        <translation type="unfinished"></translation>
+        <translation>480p</translation>
     </message>
     <message>
         <source>360p</source>
-        <translation type="unfinished"></translation>
+        <translation>360p</translation>
     </message>
     <message>
         <source>Preferred Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Eelistatud vorming:</translation>
     </message>
     <message>
         <source>3GP</source>
-        <translation type="unfinished"></translation>
+        <translation>3GP</translation>
     </message>
     <message>
         <source>FLV</source>
-        <translation type="unfinished"></translation>
+        <translation>FLV</translation>
     </message>
     <message>
         <source>MP4</source>
-        <translation type="unfinished"></translation>
+        <translation>MP4</translation>
     </message>
     <message>
         <source>WEBM</source>
-        <translation type="unfinished"></translation>
+        <translation>WEBM</translation>
     </message>
     <message>
         <source>Enter URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sisesta võrguaadress:</translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>Esitusloend</translation>
     </message>
     <message>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Sirvi...</translation>
     </message>
     <message>
         <source>Defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Vaikimisi väärtused</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Laadi alla</translation>
     </message>
 </context>
 </TS>

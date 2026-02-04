@@ -5,35 +5,35 @@
     <name>QCoreApplication</name>
     <message>
         <source>Youtube Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation>Videote allalaadija</translation>
     </message>
     <message>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Vali kaust</translation>
     </message>
     <message>
         <source>Cancel download in progress?</source>
-        <translation type="unfinished"></translation>
+        <translation>Kas katkestad allalaadimise?</translation>
     </message>
     <message>
         <source>Saving and converting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Salvestan ja teisendan...</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Edenemine</translation>
     </message>
     <message>
         <source>Invalid argument in config file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Seadistustefailis leidub vigane argument:</translation>
     </message>
     <message>
         <source>invalid argument</source>
-        <translation type="unfinished"></translation>
+        <translation>vigane argument</translation>
     </message>
     <message>
         <source>out of range</source>
-        <translation type="unfinished"></translation>
+        <translation>väljaspool etteantud piire</translation>
     </message>
     <message>
         <source>undefined error</source>

@@ -93,6 +93,7 @@ install(TARGETS youtubedl-gui RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
 set(TRANSLATIONS
     locales/ytdl-gui_fr.qm
     locales/ytdl-gui_de.qm
+    locales/ytdl-gui_et.qm
     # Add other translation files here
 )
 

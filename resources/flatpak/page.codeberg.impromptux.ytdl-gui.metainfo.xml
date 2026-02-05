@@ -11,6 +11,7 @@
   <url type="homepage">https://codeberg.org/impromptux/ytdl-gui</url>
   <url type="bugtracker">https://codeberg.org/impromptux/ytdl-gui/issues</url>
   <url type="vcs-browser">https://codeberg.org/impromptux/ytdl-gui</url>
+  <url type="translate">https://translate.codeberg.org/engage/ytdl-gui/</url>
   <branding>
     <color type="primary" scheme_preference="light">#1a5fb4</color>
     <color type="primary" scheme_preference="dark">#1a5fb4</color>
@@ -58,6 +59,14 @@
     <keyword>Utility</keyword>
   </keywords>
   <releases>
+        <release version="4.3.2" date="2026-02-05">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.3.2</url>
+          <description>
+            <ul>
+              <li>Update Estonian translation by Priit Jõerüüt(jrtcdbrg) (Many thanks to him!)</li>
+            </ul>
+          </description>
+        </release>
         <release version="4.3.1" date="2026-02-04">
           <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.3.1</url>
           <description>

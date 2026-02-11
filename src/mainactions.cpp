@@ -323,7 +323,7 @@ void ytdl::downloadAction() {
             std::string command = ytdl_prog + " -x " + url_str + " -o " + directory_str \
                     + " --audio-format " + audio_format \
                     + " --audio-quality " + audio_quality \
-                    + " --ignore-config " + playlist + thumbnail + "--newline | " \
+                    + " --ignore-config " + playlist + thumbnail + embed_metadata + "--newline | " \
                     + parse_output;
 
             this->run_ytdl(command);

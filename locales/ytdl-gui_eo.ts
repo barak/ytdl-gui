@@ -78,10 +78,6 @@
 <context>
     <name>ytdl</name>
     <message>
-        <source>ytdl</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -204,6 +200,38 @@
     <message>
         <source>Download</source>
         <translation>Elŝutu</translation>
+    </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Best quality audio, the file will be bigger than with other quality levels.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Lower quality audio, the file will be smaller than with other quality levels.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(Recommended for open-source systems) Small files and good performances but not supported everywhere</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(Recommended for most system) Best compatibility and good audio quality</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Better audio reproduction but large files and not supported everywhere</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Better audio reproduction, really large files</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

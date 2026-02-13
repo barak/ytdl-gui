@@ -207,7 +207,7 @@
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation>Téléchargeur de vidéos</translation>
     </message>
     <message>
         <source>Best quality audio, the file will be bigger than with other quality levels.</source>

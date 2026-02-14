@@ -1,0 +1,23 @@
+on:   
+  release:
+    types: [published]
+  jobs:
+    test:
+      runs-on: codeberg-tiny-lazy
+      steps:
+         - name: Checkout the repository
+           uses: actions/checkout@v4
+           with:
+             ref: 'master'
+         - name: Install dependencies
+           run: apt update && apt install build-essential cmake qt6-base-dev -y
+         - name: Patch
+           run: ls -R && patch < resources/forjeo-actions/forjeo-actions.diff src/mainactions.cpp
+         - name: Build
+           run: mkdir build && cd build && ls .. && cmake .. && make && cd ..
+         - name: Export build
+           run: mkdir artifacts && mv build/youtubedl-gui artifacts/
+         - uses: actions/upload-artifact@v3
+           with:
+             name: x86-64
+             path: artifacts/

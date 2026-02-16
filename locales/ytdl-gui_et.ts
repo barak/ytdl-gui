@@ -235,7 +235,11 @@
     </message>
     <message>
         <source>Better audio reproduction, really large files</source>
-        <translation>Parim heli taasesitus, aga failid on hiidsuured</translation>
+        <translation type="vanished">Parim heli taasesitus, aga failid on hiidsuured</translation>
+    </message>
+    <message>
+        <source>Better audio reproduction but really large files</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

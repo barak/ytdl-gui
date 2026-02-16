@@ -257,10 +257,10 @@
           <item>
            <widget class="QRadioButton" name="radioWAV">
             <property name="toolTip">
-             <string>Better audio reproduction, really large files</string>
+             <string>Better audio reproduction but really large files</string>
             </property>
             <property name="whatsThis">
-             <string>Better audio reproduction, really large files</string>
+             <string>Better audio reproduction but really large files</string>
             </property>
             <property name="text">
              <string>WAV</string>

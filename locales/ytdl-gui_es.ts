@@ -226,7 +226,7 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <source>Better audio reproduction, really large files</source>
+        <source>Better audio reproduction but really large files</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -239,7 +239,7 @@
     </message>
     <message>
         <source>Better audio reproduction but really large files</source>
-        <translation type="unfinished"></translation>
+        <translation>Parem heli taasesitus, aga failid on hiidsuured</translation>
     </message>
 </context>
 </TS>

@@ -2,7 +2,7 @@
 mkdir deb 2>/dev/null
 cd deb
 mkdir DEBIAN 2>/dev/null
-version=$(git describe --tags)
+version=$(git describe --tags||(git fetch --tags > /dev/null &&git describe --tags --always))
 version="${version:1}" #remove the "v"
 ##################################DEBIAN/control####################################################
 echo "Package: youtubedl-gui

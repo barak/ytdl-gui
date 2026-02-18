@@ -26,6 +26,9 @@ int main(int argc, char *argv[])
     }else if (language == "Estonian"){
         localeID = "et";
         qDebug() << "Estonian locale by Priit Jõerüüt";
+    }else if (language == "Chinese"){
+        localeID = "zh_Hans";
+        qDebug() << "Chinese locale by Outbreak2096";
     }
     qDebug() << "Chosen locale:" << localeID;
     if (localeID != "en"){

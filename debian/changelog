@@ -1,9 +1,10 @@
-youtubedl-gui (3.0-3) unstable; urgency=medium
+youtubedl-gui (4.4-1) unstable; urgency=medium
 
   * bump policy
   * uscan v5, and switch upstream from JaGoLi to impromptux
+  * new upstream release
 
- -- Barak A. Pearlmutter <bap@debian.org>  Wed, 18 Feb 2026 14:22:00 +0000
+ -- Barak A. Pearlmutter <bap@debian.org>  Wed, 18 Feb 2026 14:31:46 +0000
 
 youtubedl-gui (3.0-2) unstable; urgency=medium
 

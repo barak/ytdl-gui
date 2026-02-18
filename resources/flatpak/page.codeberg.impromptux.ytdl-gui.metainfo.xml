@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>page.codeberg.impromptux.ytdl-gui</id>
+  <developer id="page.codeberg.impromptux">
+    <name translate="no">Impromptux</name>
+  </developer>
+  <name>Yt Downloader</name>
+  <name xml:lang="fr">Téléchargeur de vidéos</name>
+  <summary>Download videos and music from various sources.</summary>
+  <summary xml:lang="fr">Télécharger des vidéos et de la musique à partir de sites web.</summary>
+  <url type="homepage">https://codeberg.org/impromptux/ytdl-gui</url>
+  <url type="bugtracker">https://codeberg.org/impromptux/ytdl-gui/issues</url>
+  <url type="vcs-browser">https://codeberg.org/impromptux/ytdl-gui</url>
+  <url type="translate">https://translate.codeberg.org/engage/ytdl-gui/</url>
+  <branding>
+    <color type="primary" scheme_preference="light">#1a5fb4</color>
+    <color type="primary" scheme_preference="dark">#1a5fb4</color>
+  </branding>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>
+      A simple-to-use tool to download videos or audios from various sources including Youtube, Dailymotion, Vimeo...
+      It support more than 1000 websites and 8 different formats including mp3, mp4 and webm. 
+      You can chose between different resolutions and audio quality. It also support downloading whole playlists.
+    </p>
+    <p xml:lang="fr">
+      Un outil de téléchargement de vidéos et d’audios simple supportant de nombreux sites comme Youtube, Dailymotion, Vimeo...
+      Il supporte plus de 1000 sites différents et 8 types de fichier différents dont mp3, mp4 et webm. 
+      Il permet aussi de choisir entre plusieurs résolutions et qualités de l’audio. Il propose aussi de télécharger des playlists entières en un seul clic.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">page.codeberg.impromptux.ytdl-gui.desktop</launchable>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/11630448e725ba748a9115215e0381a36638fffc/resources/screenshot2.png</image>
+      <caption>The main window of the app. (Video tab)</caption>
+      <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Vidéo)</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/d23123e4b8c6801b330ec58d9890b5939cb75b4f/resources/screenshot1.png</image>
+      <caption>The main window of the app. (Audio tab)</caption>
+      <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Audio)</caption>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1" />
+  <recommends>
+    <control>keyboard</control>
+    <control>pointing</control>
+  </recommends>
+  <requires>
+    <display_length compare="ge">600</display_length>
+  </requires>
+  <keywords>
+    <keyword>AudioVideo</keyword>
+    <keyword>VideoDownloader</keyword>
+    <keyword>Qt</keyword>
+    <keyword>Utility</keyword>
+  </keywords>
+  <releases>
+        <release version="4.4" date="2026-02-11">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4</url>
+          <description>
+            <ul>
+              <li>Write metadata(author,album,singer...) for audio files</li>
+            </ul>
+          </description>
+        </release>
+        <release version="4.3.2" date="2026-02-05">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.3.2</url>
+          <description>
+            <ul>
+              <li>Update Estonian translation by Priit Jõerüüt(jrtcdbrg) (Many thanks to him!)</li>
+            </ul>
+          </description>
+        </release>
+        <release version="4.3.1" date="2026-02-04">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.3.1</url>
+          <description>
+            <ul>
+              <li>Add Estonian translation by Priit Jõerüüt(jrtcdbrg) (Many thanks to him!)</li>
+              <li>Add Kabyle translations support</li>
+            </ul>
+          </description>
+        </release>
+        <release version="4.3" date="2026-02-01">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.3</url>
+          <description>
+            <ul>
+              <li>Add Spanish translations support</li>
+            </ul>
+          </description>
+        </release>
+        <release version="4.2.1" date="2026-01-31">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.2.1</url>
+          <description>
+            <ul>
+              <li>Add German translations support</li>
+              <li>Partial German translation</li>
+            </ul>
+          </description>
+        </release>
+        <release version="4.2" date="2026-01-30">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.2</url>
+          <description>
+            <ul>
+              <li>Show translation when download finish and window is in background.</li>
+              <li>Add translations support</li>
+              <li>Add French translation</li>
+            </ul>
+          </description>
+        </release>
+        <release version="4.1" date="2026-01-21">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.1</url>
+          <description>
+            <p>Add 360p format support.</p>
+          </description>
+        </release>
+    </releases>
+
+</component>

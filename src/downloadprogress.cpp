@@ -1,4 +1,4 @@
-#include <QDialog>
+//#include <QDialog>
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -62,6 +62,6 @@ void downloadProgress::updateStatus() {
         sleep(1);
     }
 
-    download_ui->progressBar->setFormat("Saving and converting...");
+    download_ui->progressBar->setFormat(QCoreApplication::tr("Saving and converting..."));
     emit finished();
 }

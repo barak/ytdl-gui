@@ -27,9 +27,7 @@ mainActions::mainActions(QObject *parent) : QObject(parent)	{
         connect(returnAction, &QShortcut::activated, ui->buttonDownload, &QPushButton::click);
 
         //connect defaults checkbox to blurring out of options
-        connect(ui->defaultsCheck, &QCheckBox::stateChanged, window, &ytdl::changeVisibility);
-
-
+        connect(ui->defaultsCheck, &QCheckBox::checkStateChanged, window, &ytdl::changeVisibility);
         // resume user settings
         if (QFile(window->file_qstr).exists()) {
             readConfig* user_settings = new readConfig(window->file_str);
@@ -54,21 +52,21 @@ mainActions::mainActions(QObject *parent) : QObject(parent)	{
                 num_to_button(ui->MFormatGroup, stoi(user_settings->values[5]), 5);
 
                 //apply video settings
-                num_to_button(ui->VResGroup, stoi(user_settings->values[6]), 5);
+                num_to_button(ui->VResGroup, stoi(user_settings->values[6]), 6);
                 num_to_button(ui->VFormatGroup, stoi(user_settings->values[7]), 4);
             }
 
              catch (const std::invalid_argument &e) {
-                qDebug() << "Invalid argument in config file:";
-                qDebug() << e.what() << "invalid argument";
+                qDebug() << QCoreApplication::tr("Invalid argument in config file:");
+                qDebug() << e.what() << QCoreApplication::tr("invalid argument");
             }
              catch (const std::out_of_range &e) {
-                qDebug() << "Invalid argument in config file:";
-                qDebug() << e.what()  << "out of range";
+                qDebug() << QCoreApplication::tr("Invalid argument in config file:");
+                qDebug() << e.what()  << QCoreApplication::tr("out of range");
             }
              catch (const std::exception &e) {
-                qDebug() << "Invalid argument in config file:";
-                qDebug() << e.what() << "undefined error";
+                qDebug() << QCoreApplication::tr("Invalid argument in config file:");
+                qDebug() << e.what() << QCoreApplication::tr("undefined error");
             }
 
         }
@@ -84,7 +82,7 @@ void mainActions::bool_to_checkbox(std::string input, QCheckBox* box) {
         box->setCheckState(Qt::Unchecked);
     }
     else {
-        qDebug() << "Invalid argument in config file";
+        qDebug() << QCoreApplication::tr("Invalid argument in config file");
     }
 }
 
@@ -93,7 +91,7 @@ void mainActions::num_to_button(QButtonGroup* group, int sel, int total) {
         group->button(sel)->setChecked(true);
     }
     else {
-        qDebug() << "Invalid argument in config file";
+        qDebug() << QCoreApplication::tr("Invalid argument in config file");
     }
 }
 
@@ -206,12 +204,14 @@ void ytdl::printResult(int result_num) {
 
         if (result_num == 0) {
                 QMessageBox success;
-                success.setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
+                success.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
                 success.setIcon(QMessageBox::Information);
-                success.setText("Download Succeeded");
+                success.setText(QCoreApplication::tr("Download Succeeded"));
 
                 if (!no_feedback && is_active) {
                     success.exec();
+                } else {
+                    system("notify-send --icon page.codeberg.impromptux.ytdl-gui \"Yt Downloader\" \"Download succeded\" >/dev/null 2>&1 &");
                 }
 
                 emit userAccepted();
@@ -219,9 +219,9 @@ void ytdl::printResult(int result_num) {
         }
         else {
                 QMessageBox fail;
-                fail.setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
+                fail.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
                 fail.setIcon(QMessageBox::Critical);
-                fail.setText("Failed! Recheck input for errors.");
+                fail.setText(QCoreApplication::tr("Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats."));
 
                 if (no_feedback == false) {
                     fail.exec();
@@ -233,13 +233,22 @@ void ytdl::printResult(int result_num) {
 }
 
 void ytdl::downloadAction() {
-    std::string ytdl_prog = "youtube-dl 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+    std::string ytdl_prog;
+    std::string embed_metadata;
+    if (!system("which yt-dlp > /dev/null 2>&1")){
+        ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+        embed_metadata = "--embed-metadata ";
+    } else {
+        ytdl_prog = "youtube-dl 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+        embed_metadata = " ";
+    }
     std::string url_str = quote + QString_to_str(ui->lineURL->text()) + quote;
     std::string directory_str = quote + QString_to_str(ui->lineBrowse->text()) + "/%(title)s.%(ext)s" + quote;
     std::string parse_output = R"(stdbuf -o0 grep -oP '^\[download\].*?\K([0-9]+)')";
     std::string thumbnail;
+    std::string embed_subs;
 
-    //Youtube playlist support
+    //Playlist support
     std::string playlist;
     if (ui->playlistCheck->isChecked()) {
         playlist = "";
@@ -314,7 +323,7 @@ void ytdl::downloadAction() {
             std::string command = ytdl_prog + " -x " + url_str + " -o " + directory_str \
                     + " --audio-format " + audio_format \
                     + " --audio-quality " + audio_quality \
-                    + " --ignore-config " + playlist + thumbnail + "--newline | " \
+                    + " --ignore-config " + playlist + thumbnail + embed_metadata + "--newline | " \
                     + parse_output;
 
             this->run_ytdl(command);
@@ -334,9 +343,11 @@ void ytdl::downloadAction() {
                     case 2:
                             video_format = "mp4";
                             audio_format = "m4a";
+                            embed_subs = "--embed-subs ";
                             break;
                     case 3:
                             video_format = "webm";
+                            embed_subs = "--embed-subs ";
                             break;
             }
 
@@ -357,6 +368,9 @@ void ytdl::downloadAction() {
                     case 4:
                             video_res = "480";
                             break;
+                    case 5:
+                            video_res = "360";
+                            break;
             }
 
             std::string format_options = quote + video_format + "[height=" + video_res \
@@ -364,7 +378,7 @@ void ytdl::downloadAction() {
 
             std::string command = ytdl_prog + whitespace + url_str + " -o " + directory_str \
                     + " -f " + format_options \
-                    + " --ignore-config " + playlist + "--newline | " \
+                    + " --ignore-config " + playlist + embed_subs + embed_metadata + "--newline | " \
                     + parse_output;
 
             this->run_ytdl(command);

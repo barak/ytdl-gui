@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="et">
+<context>
+    <name>QCoreApplication</name>
+    <message>
+        <source>Youtube Downloader</source>
+        <translation>Videote allalaadija</translation>
+    </message>
+    <message>
+        <source>Select a folder</source>
+        <translation>Vali kaust</translation>
+    </message>
+    <message>
+        <source>Cancel download in progress?</source>
+        <translation>Kas katkestad allalaadimise?</translation>
+    </message>
+    <message>
+        <source>Saving and converting...</source>
+        <translation>Salvestan ja teisendan...</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Edenemine</translation>
+    </message>
+    <message>
+        <source>Invalid argument in config file:</source>
+        <translation>Seadistustefailis leidub vigane argument:</translation>
+    </message>
+    <message>
+        <source>invalid argument</source>
+        <translation>vigane argument</translation>
+    </message>
+    <message>
+        <source>out of range</source>
+        <translation>väljaspool etteantud piire</translation>
+    </message>
+    <message>
+        <source>undefined error</source>
+        <translation>määratlemata viga</translation>
+    </message>
+    <message>
+        <source>Invalid argument in config file</source>
+        <translation>Vigane argument seadistuste failis</translation>
+    </message>
+    <message>
+        <source>Download Succeeded</source>
+        <translation>Allalaadimine õnnestus</translation>
+    </message>
+    <message>
+        <source>Download succeded</source>
+        <translation type="vanished">Téléchargement effectué</translation>
+    </message>
+    <message>
+        <source>[INFO] Yt-dlp command: </source>
+        <translation>[INFO] Yt-dlp käsk: </translation>
+    </message>
+    <message>
+        <source>[ERROR] QProcess failed with error code: </source>
+        <translation>[ERROR] QProcess lõpetas töö veakoodiga: </translation>
+    </message>
+    <message>
+        <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
+        <translation>Ei õnnestunud! Kontrolli sisendist võimalike vigade osas. Kui etteantud võrguaadress on õige, siis proovi muid resolutsioone ja vorminguid.</translation>
+    </message>
+</context>
+<context>
+    <name>downloadStatus</name>
+    <message>
+        <source>Dialog</source>
+        <translation>Vaade</translation>
+    </message>
+    <message>
+        <source>Downloading...</source>
+        <translation>Laadin alla...</translation>
+    </message>
+</context>
+<context>
+    <name>ytdl</name>
+    <message>
+        <source>ytdl</source>
+        <translation>ytdl</translation>
+    </message>
+    <message>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Muusika&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Audio</source>
+        <translation>Heliriba</translation>
+    </message>
+    <message>
+        <source>Quality:</source>
+        <translation>Kvaliteet:</translation>
+    </message>
+    <message>
+        <source>Best</source>
+        <translation>Parim</translation>
+    </message>
+    <message>
+        <source>Good</source>
+        <translation>Hea</translation>
+    </message>
+    <message>
+        <source>Medium</source>
+        <translation>Keskmine</translation>
+    </message>
+    <message>
+        <source>Low</source>
+        <translation>Madal</translation>
+    </message>
+    <message>
+        <source>Format:</source>
+        <translation>Vorming:</translation>
+    </message>
+    <message>
+        <source>AAC</source>
+        <translation>AAC</translation>
+    </message>
+    <message>
+        <source>OGG</source>
+        <translation>OGG</translation>
+    </message>
+    <message>
+        <source>MP3</source>
+        <translation>MP3</translation>
+    </message>
+    <message>
+        <source>OPUS</source>
+        <translation>OPUS</translation>
+    </message>
+    <message>
+        <source>WAV</source>
+        <translation>WAV</translation>
+    </message>
+    <message>
+        <source>Video</source>
+        <translation>Videoriba</translation>
+    </message>
+    <message>
+        <source>Max Resolution:</source>
+        <translation>Suurim resolutsioon:</translation>
+    </message>
+    <message>
+        <source>4K</source>
+        <translation>4K</translation>
+    </message>
+    <message>
+        <source>1440p</source>
+        <translation>1440p</translation>
+    </message>
+    <message>
+        <source>1080p</source>
+        <translation>1080p</translation>
+    </message>
+    <message>
+        <source>720p</source>
+        <translation>720p</translation>
+    </message>
+    <message>
+        <source>480p</source>
+        <translation>480p</translation>
+    </message>
+    <message>
+        <source>360p</source>
+        <translation>360p</translation>
+    </message>
+    <message>
+        <source>Preferred Format:</source>
+        <translation>Eelistatud vorming:</translation>
+    </message>
+    <message>
+        <source>3GP</source>
+        <translation>3GP</translation>
+    </message>
+    <message>
+        <source>FLV</source>
+        <translation>FLV</translation>
+    </message>
+    <message>
+        <source>MP4</source>
+        <translation>MP4</translation>
+    </message>
+    <message>
+        <source>WEBM</source>
+        <translation>WEBM</translation>
+    </message>
+    <message>
+        <source>Enter URL:</source>
+        <translation>Sisesta võrguaadress:</translation>
+    </message>
+    <message>
+        <source>Playlist</source>
+        <translation>Esitusloend</translation>
+    </message>
+    <message>
+        <source>Browse...</source>
+        <translation>Sirvi...</translation>
+    </message>
+    <message>
+        <source>Defaults</source>
+        <translation>Vaikimisi väärtused</translation>
+    </message>
+    <message>
+        <source>Download</source>
+        <translation>Laadi alla</translation>
+    </message>
+</context>
+</TS>

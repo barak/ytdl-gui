@@ -8,8 +8,8 @@ downloadStatus::downloadStatus(QWidget *parent) :
     download_ui(new Ui::downloadStatus)
 {
     download_ui->setupUi(this);
-    this->setWindowTitle("Progress");
-    this->setWindowIcon(QIcon::fromTheme("youtubedl-gui"));
+    this->setWindowTitle(QCoreApplication::tr("Progress"));
+    this->setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
 
     //add minimize button
     this->setWindowFlags(windowFlags() | Qt::WindowMinimizeButtonHint);

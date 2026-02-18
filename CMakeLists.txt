@@ -1,8 +1,6 @@
-cmake_minimum_required(VERSION 3.9)
+cmake_minimum_required(VERSION 3.16)
 
 project(youtubedl-gui LANGUAGES CXX)
-
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
 set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
@@ -18,6 +16,9 @@ INCLUDE(CheckIPOSupported)
 if(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
   set(CMAKE_INSTALL_PREFIX "/usr")
 endif()
+
+
+add_definitions(-DYTDL_GUI_DATA_DIR="${CMAKE_INSTALL_PREFIX}/${CMAKE_INSTALL_DATAROOTDIR}/ytdl-gui/")
 
 # check if compiler supports link time optmizations and enable it
 if(LINUX)
@@ -41,7 +42,8 @@ if(NOT TARGET uninstall)
     COMMAND ${CMAKE_COMMAND} -P ${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake)
 endif()
 
-find_package(QT NAMES Qt6 Qt5 COMPONENTS Widgets REQUIRED)
+find_package(QT NAMES Qt6 COMPONENTS Widgets REQUIRED)
+message(STATUS "Building using Qt version: ${QT_VERSION}")
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS Widgets REQUIRED)
 
 set(SRC
@@ -88,25 +90,36 @@ endif()
 target_link_libraries(youtubedl-gui PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
 
 install(TARGETS youtubedl-gui RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR})
+set(TRANSLATIONS
+    locales/ytdl-gui_fr.qm
+    locales/ytdl-gui_de.qm
+    locales/ytdl-gui_et.qm
+    # Add other translation files here
+)
+
+foreach(translation_file ${TRANSLATIONS})
+    install(FILES ${translation_file} DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/ytdl-gui/locales)
+endforeach()
 
 install(FILES icons/16x16.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/16x16/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/32x32.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/32x32/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/64x64.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/64x64/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/128x128.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/128x128/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/256x256.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/256x256/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 install(FILES icons/512x512.png
     DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/icons/hicolor/512x512/apps
-    RENAME youtubedl-gui.png)
+    RENAME page.codeberg.impromptux.ytdl-gui.png)
 
 install(FILES resources/youtubedl-gui.desktop
-    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications)
+    DESTINATION ${CMAKE_INSTALL_DATAROOTDIR}/applications
+    RENAME page.codeberg.impromptux.ytdl-gui.desktop)

@@ -7,6 +7,10 @@
 #include <iostream>
 #include <fstream>
 #include <QCloseEvent>
+#include <QStandardPaths>
+
+#include <QCoreApplication>
+#include <QTranslator>
 
 ytdl* ytdl::curr_window = nullptr;
 Ui::ytdl* ytdl::curr_ui = nullptr;
@@ -48,6 +52,7 @@ ytdl::ytdl(QWidget *parent)
     ui->VResGroup->setId(ui->radio1080p, 2);
     ui->VResGroup->setId(ui->radio720p, 3);
     ui->VResGroup->setId(ui->radio480p, 4);
+    ui->VResGroup->setId(ui->radio360p, 5);
 
     //center on screen
     move(QGuiApplication::screens().at(0)->geometry().center() - frameGeometry().center());
@@ -62,7 +67,7 @@ ytdl::ytdl(QWidget *parent)
     file_str = file_qstr.toUtf8().constData();
 
     //Setup text
-    QString downloads_dir = QDir::homePath() + "/Downloads";
+    QString downloads_dir = QStandardPaths::writableLocation(QStandardPaths::DownloadLocation);
     if (QDir(downloads_dir).exists()) {
         ui->lineBrowse->setText(downloads_dir);
     }
@@ -91,7 +96,7 @@ Ui::ytdl* ytdl::getUiInstance() {
 //slots function
 void ytdl::browseAction() {
 
-    QString user_dir = QFileDialog::getExistingDirectory(this, "Select a folder", QDir::homePath());
+    QString user_dir = QFileDialog::getExistingDirectory(this, QCoreApplication::tr("Select a folder"), QDir::homePath());
     if (!user_dir.isEmpty()) {
         ui->lineBrowse->setText(user_dir);
     }

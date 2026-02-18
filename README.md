@@ -1,7 +1,8 @@
 # ytdl-gui
 A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork of [the original youtubedl-gui by JaGoLi](https://github.com/JaGoLi/ytdl-gui) that seems to be abandoned.<br/><br/>
-[![Get it on Flathub!](https://flathub.org/api/badge)](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui) <br/>
-![youtubedl-gui-screenshot.png](https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/youtubedl-gui-screenshot-3.0.png)<br/>
+[![Get it on Flathub!](https://flathub.org/api/badge)](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui)
+[![Get it for Debian!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/debian/get-it-for-debian-ceratopsian.png)](https://codeberg.org/impromptux/-/packages/debian/youtubedl-gui/) <br/>
+![youtubedl-gui-screenshot.png](https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/youtubedl-gui-screenshot-3.0.png) <br/>
 
 
 ## Installation Instructions

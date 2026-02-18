@@ -1,2 +1,6 @@
-version=4
-https://github.com/JaGoLi/ytdl-gui/tags .*/v?@ANY_VERSION@@ARCHIVE_EXT@
+Version: 5
+
+Template: Github
+Owner: impromptux
+Project: ytdl-gui
+Uversion-Mangle: s/-?(a|alpha|b|beta|c|dev|pre|rc)/~$1/

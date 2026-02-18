@@ -6,8 +6,10 @@
   </developer>
   <name>Yt Downloader</name>
   <name xml:lang="fr">Téléchargeur de vidéos</name>
+  <name xml:lang="et">Téléchargeur de vidéos</name>
   <summary>Download videos and music from various sources.</summary>
   <summary xml:lang="fr">Télécharger des vidéos et de la musique à partir de sites web.</summary>
+  <summary xml:lang="et">Laadi videoid ja muusikat alla erinevatest allikatest.</summary>
   <url type="homepage">https://codeberg.org/impromptux/ytdl-gui</url>
   <url type="bugtracker">https://codeberg.org/impromptux/ytdl-gui/issues</url>
   <url type="vcs-browser">https://codeberg.org/impromptux/ytdl-gui</url>
@@ -21,13 +23,18 @@
   <description>
     <p>
       A simple-to-use tool to download videos or audios from various sources including Youtube, Dailymotion, Vimeo...
-      It support more than 1000 websites and 8 different formats including mp3, mp4 and webm. 
+      It support more than 1000 websites and 8 different formats including mp3, mp4 and webm.
       You can chose between different resolutions and audio quality. It also support downloading whole playlists.
     </p>
     <p xml:lang="fr">
       Un outil de téléchargement de vidéos et d’audios simple supportant de nombreux sites comme Youtube, Dailymotion, Vimeo...
-      Il supporte plus de 1000 sites différents et 8 types de fichier différents dont mp3, mp4 et webm. 
+      Il supporte plus de 1000 sites différents et 8 types de fichier différents dont mp3, mp4 et webm.
       Il permet aussi de choisir entre plusieurs résolutions et qualités de l’audio. Il propose aussi de télécharger des playlists entières en un seul clic.
+    </p>
+    <p xml:lang="et">
+      Lihtne tarvik videote ja helifailide allalaadimiseks erinevatest allikatest, sealhulgas Youtube, Dailymotion, Vimeo...
+      Rakendus toetab enam kui tuhandet veebisaiti ja kaheksat erinevat vormingut, sealhulgas mp3, mp4 ja webm.
+      Saad valida erinevate resolutsioonide ja helikvaliteedi vahel võid ka laadida alla terveid esitusloendeid.
     </p>
   </description>
   
@@ -37,11 +44,13 @@
       <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/11630448e725ba748a9115215e0381a36638fffc/resources/screenshot2.png</image>
       <caption>The main window of the app. (Video tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Vidéo)</caption>
+      <caption xml:lang="et">Rakenduse põhiakna vaade. (Video vahekaart)</caption>
     </screenshot>
     <screenshot>
       <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/d23123e4b8c6801b330ec58d9890b5939cb75b4f/resources/screenshot1.png</image>
       <caption>The main window of the app. (Audio tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Audio)</caption>
+      <caption xml:lang="et">Rakenduse põhiakna vaade. (Helifaili vahekaart)</caption>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1" />

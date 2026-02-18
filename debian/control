@@ -1,8 +1,9 @@
 Source: youtubedl-gui
 Section: web
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
-Build-Depends: cmake, debhelper-compat (= 13),
-	qtbase5-dev, qtdeclarative5-dev
+Build-Depends: debhelper-compat (= 13),
+	cmake,
+	qt6-base-dev, ffmpeg, yt-dlp
 Standards-Version: 4.7.3
 Homepage: https://github.com/JaGoLi/ytdl-gui
 Vcs-Git: https://salsa.debian.org/debian/ytdl-gui.git
@@ -11,7 +12,7 @@ Vcs-Browser: https://salsa.debian.org/debian/ytdl-gui
 Package: youtubedl-gui
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}, yt-dlp
+Depends: ${misc:Depends}, ${shlibs:Depends}, ffmpeg, yt-dlp
 Description: GUI on yt-dlp (ie, youtube-dl) to download videos from a variety of sites
  Graphical interface to yt-dlp, the CLI for downloading videos
  from a variety of sites. Allows control of format, resolution, audio

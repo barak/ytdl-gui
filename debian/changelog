@@ -3,6 +3,7 @@ youtubedl-gui (4.4-1) unstable; urgency=medium
   * bump policy
   * uscan v5, and switch upstream from JaGoLi to impromptux
   * new upstream release
+  * update dependencies, qt6
 
  -- Barak A. Pearlmutter <bap@debian.org>  Wed, 18 Feb 2026 14:31:46 +0000
 

@@ -1,7 +1,7 @@
 # ytdl-gui
 A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork of [the original youtubedl-gui by JaGoLi](https://github.com/JaGoLi/ytdl-gui) that seems to be abandoned.<br/><br/>
 [![Get it on Flathub!](https://flathub.org/api/badge)](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui)
-[![Get it for Debian!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/debian/get-it-for-debian-ceratopsian.png)](https://codeberg.org/impromptux/-/packages/debian/youtubedl-gui/) [![Build it for ArchLinux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/arch/build-it-for-arch-linux.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux) <br/>
+[![Get it for Debian!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/debian/get-it-for-debian-ceratopsian.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Build it for ArchLinux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/arch/build-it-for-arch-linux.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux) <br/>
 ![youtubedl-gui-screenshot.png](https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/youtubedl-gui-screenshot-3.0.png) <br/>
 
 
@@ -9,18 +9,17 @@ A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork o
 There are packages of the original youtubedl-gui for arch-based linux distros (using the aur) and Debian based distro.
 If you prefer you can also build from sources (see below) or use flatpak to use this fork instead of the original youtubedl-gui.
 ### Arch linux and Manjaro
-On any arch system with an aur helper such as ```yay```:<br/>
-```yay -S youtubedl-gui```<br/>
-Everything required to compile and install the application from source should be done automatically.
+You can build it for Arch Linux and Arch Linux-based distribution by folowing the instructions [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux).
 
 ### Debian and Ubuntu
-For a system running at least Debian 12 Bookworm or Ubuntu jammy, the application is in the distribution's standard repositories.<br/>
-Simply run ```sudo apt install youtubedl-gui``` to install the GUI interface.<br/><br/>
-Then, make sure ```ffmpeg``` and ```python3-pip``` are on your system too.<br/>
-Finally, execute ```sudo pip3 install yt-dlp``` to get the latest version of ```yt-dlp``` on your system.
+For a system running Debian, Ubuntu, Linux Mint, LMDE or any Debian-based linux distribution install instruction are [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian).
+
 ### Flatpak
 It is also possible to install the application via Flatpak .<br/>
 You can find the app on Flathub [here](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui).
+
+### Alpine Linux
+Currently, there is no package for Alpine Linux, you will need to build it from source. There are some Alpine Linux specific build instruction [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Alpine).
 
 ## HiDPI Support
 This application does support HiDPI displays even though its size is fixed.

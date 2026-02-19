@@ -1,8 +1,16 @@
 [Desktop Entry]
-Name=Youtube Downloader
+Name=Yt Downloader
+Name[et]=Videote allalaadija
+Name[fr]=Téléchargeur de vidéos
+Name[zh]=YouTube 下载器
+GenericName=Video Downloader
+GenericName[et]=Videote allalaadija
+GenericName[fr]=Téléchargeur de vidéos
 Exec=youtubedl-gui
 Icon=page.codeberg.impromptux.ytdl-gui
 Type=Application
 Categories=AudioVideo;Utility
-Comment=Download Youtube videos to local audio or video files.
+Comment=Download videos and audio from various websites.
+Comment[et]=Laadi videoid ja muusikat alla erinevatest allikatest.
+Comment[fr]=Télécharger des vidéos et de la musique à partir de sites web.
 Keywords=Youtube;Download

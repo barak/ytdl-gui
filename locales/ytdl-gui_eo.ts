@@ -131,7 +131,7 @@
     </message>
     <message>
         <source>Video</source>
-        <translation type="unfinished"></translation>
+        <translation>Video</translation>
     </message>
     <message>
         <source>Max Resolution:</source>

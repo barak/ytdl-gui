@@ -12,7 +12,7 @@ source="$pkgname-$pkgver.tar.gz::https://codeberg.org/impromptux/ytdl-gui/archiv
 builddir="$srcdir/ytdl-gui/build"
 url="https://codeberg.org/impromptux/ytdl-gui"
 pkgdesc="Download videos and audios from various sources"
-options="!check" # there is no test suite
+options="!check" # there is no test suite
 
 build() {
 	patch < "$srcdir/ytdl-gui/resources/busybox/busybox.diff" "$srcdir/ytdl-gui/src/mainactions.cpp" &&

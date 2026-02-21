@@ -7,12 +7,12 @@ pkgdesc="A simple-to-use graphical interface for downloading videos and audio"
 arch="x86_64 aarch64"
 license="GPL-3.0"
 depends="yt-dlp qt6-qtbase"
-makedepends=" git cmake make qt6-qtbase-dev" #g++
+makedepends="git cmake make qt6-qtbase-dev"
 source="$pkgname-$pkgver.tar.gz::https://codeberg.org/impromptux/ytdl-gui/archive/v$pkgver.tar.gz"
 builddir="$srcdir/ytdl-gui/build"
 url="https://codeberg.org/impromptux/ytdl-gui"
 pkgdesc="Download videos and audios from various sources"
-options="!check" #there is no test suite
+options="!check" # there is no test suite
 
 build() {
 	patch < "$srcdir/ytdl-gui/resources/busybox/busybox.diff" "$srcdir/ytdl-gui/src/mainactions.cpp" &&

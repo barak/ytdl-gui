@@ -18,7 +18,7 @@ build() {
 	patch < "$srcdir/ytdl-gui/resources/busybox/busybox.diff" "$srcdir/ytdl-gui/src/mainactions.cpp" &&
 	mkdir "$builddir" &&
 	cd "$builddir" &&
-	MAKE_CXX_COMPILER=g++ cmake .. -G "Unix Makefiles" && 
+	MAKE_CXX_COMPILER=g++ cmake .. -G "Unix Makefiles" &&
 	make DESTDIR="$pkgdir"
 	:
 }

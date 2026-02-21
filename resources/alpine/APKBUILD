@@ -1,0 +1,33 @@
+# Contributor:
+# Maintainer: Antoine Impromptux <impromptux@mailo.com>
+pkgname=youtubedl-gui
+pkgver=4.4.1
+pkgrel=0
+pkgdesc="A simple-to-use graphical interface for downloading videos and audio"
+arch="x86_64 aarch64"
+license="GPL-3.0"
+depends="yt-dlp qt6-qtbase"
+makedepends=" git cmake make qt6-qtbase-dev" #g++
+source="$pkgname-$pkgver.tar.gz::https://codeberg.org/impromptux/ytdl-gui/archive/v$pkgver.tar.gz"
+builddir="$srcdir/ytdl-gui/build"
+url="https://codeberg.org/impromptux/ytdl-gui"
+pkgdesc="Download videos and audios from various sources"
+options="!check"
+
+build() {
+	patch < "$srcdir/ytdl-gui/resources/busybox/busybox.diff" "$srcdir/ytdl-gui/src/mainactions.cpp" &&
+	mkdir "$builddir" &&
+	cd "$builddir" &&
+	MAKE_CXX_COMPILER=g++ cmake .. -G "Unix Makefiles" && 
+	make DESTDIR="$pkgdir"
+	:
+}
+
+package() {
+	cd "$builddir" && make DESTDIR="$pkgdir" install
+	:
+}
+
+sha512sums="
+7269137a68eb95bf18774f68b0bdbbdd3126bb70d53c62a5edb33595f912fefd7cef533f6015a76c7f487f5d64fd10dd2b1442fac76cf0095d7599956ecd7ee8  youtubedl-gui-4.4.1.tar.gz
+"

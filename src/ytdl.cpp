@@ -12,15 +12,23 @@
 #include <QCoreApplication>
 #include <QTranslator>
 #include "ytdl.h"
+#include <ctime>
 
 ytdl* ytdl::curr_window = nullptr;
 Ui::ytdl* ytdl::curr_ui = nullptr;
 
-
+//std::string window_id_str=window_id;
+std::string window_id;
 ytdl::ytdl(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::ytdl)
 {
+    //Create a random window id that will be used for progress file
+    //srand(time(NULL));
+    srand(static_cast<unsigned int>(std::chrono::system_clock::now().time_since_epoch().count()));
+    window_id=std::to_string(rand()%(99999-1)+1);
+    qDebug() << "[DEBUG] Internal window id: " << window_id;
+
     //Initialize pointers
     ui->setupUi(this);
     curr_window = this;
@@ -95,7 +103,7 @@ Ui::ytdl* ytdl::getUiInstance() {
 }
 
 std::string ytdl::getPrgPath() {
-    std::string file_name = "/tmp/ytdl_prg";
+    std::string file_name = "/tmp/ytdl_prg_"+window_id;
     return file_name;
 }
 

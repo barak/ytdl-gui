@@ -1,7 +1,7 @@
 # ytdl-gui
 A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork of [the original youtubedl-gui by JaGoLi](https://github.com/JaGoLi/ytdl-gui) that seems to be abandoned.<br/><br/>
-[![Get it on Flathub!](https://flathub.org/api/badge)](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui)
-[![Get it for Debian!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/debian/get-it-for-debian-ceratopsian.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Build it for ArchLinux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/arch/build-it-for-arch-linux.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux) <br/>
+[![Get it on Flathub!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/flathub/get-it-on-flathub.png)](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui)
+[![Get it for Debian!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/debian/get-it-for-debian-ceratopsian.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Build it for ArchLinux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/arch/build-it-for-arch-linux-dark.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux) [![Get it for Alpine Linux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/alpine/get-it-for-alpine-linux.png)](https://codeberg.org/impromptux/-/packages/alpine/youtubedl-gui/4.4.1-r0) <br/>
 ![youtubedl-gui-screenshot.png](https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/youtubedl-gui-screenshot-3.0.png) <br/>
 
 
@@ -49,6 +49,12 @@ To install after having installed the correct dependencies:<br/><br/>
 ## Contributing
 If you want to contribute you can [fork the repo](https://codeberg.org/impromptux/ytdl-gui/fork) and open a pull request with a description of your changes.
 If you have a suggestion or a bug to report you can [open an issue](https://codeberg.org/impromptux/ytdl-gui/issues)
+
+## Contributors
+- Jason Goulet-Lipman: Original youtubedl-gui
+- [jrtcdbrg](https://codeberg.org/jrtcdbrg) : Estonian translations
+- [Outbreak2096](https://codeberg.org/Outbreak2096) : Chinese translation
+- [Contributors of youtubedl-gui](https://codeberg.org/impromptux/ytdl-gui/activity/contributors)
 
 ## TODO
 - [x] Migrate to Qt6

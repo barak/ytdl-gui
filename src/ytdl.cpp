@@ -11,6 +11,7 @@
 
 #include <QCoreApplication>
 #include <QTranslator>
+#include "ytdl.h"
 
 ytdl* ytdl::curr_window = nullptr;
 Ui::ytdl* ytdl::curr_ui = nullptr;
@@ -86,12 +87,18 @@ ytdl::~ytdl()
 
 //Return Pointers
 ytdl* ytdl::getWinInstance() {
-        return curr_window;
+    return curr_window;
 }
 
 Ui::ytdl* ytdl::getUiInstance() {
-        return curr_window->ui;
+    return curr_window->ui;
 }
+
+std::string ytdl::getPrgPath() {
+    std::string file_name = "/tmp/ytdl_prg";
+    return file_name;
+}
+
 
 //slots function
 void ytdl::browseAction() {

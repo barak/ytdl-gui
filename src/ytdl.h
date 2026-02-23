@@ -40,6 +40,7 @@ public:
     void run_ytdl(std::string input);
     static ytdl* getWinInstance();
     static Ui::ytdl* getUiInstance();
+    static std::string getPrgPath();
     std::string check_to_bool(QCheckBox* input);
 
 signals:

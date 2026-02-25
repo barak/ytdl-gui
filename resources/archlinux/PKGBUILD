@@ -7,8 +7,8 @@ arch=('x86_64'
       'aarch64')
 license=('GPL3')
 pkgdesc="Download videos and audio from various sources(1000+) including YouTube."
-source=("https://codeberg.org/impromptux/ytdl-gui/archive/v4.1.zip")
-sha256sums=('259b2783cd69bdefb67f6416bfa2d18cdcb59fd060bab295763e16a24dd23e5c')
+source=("https://codeberg.org/impromptux/ytdl-gui/archive/v4.4.zip")
+sha256sums=('ac3f34ebc1c106a05d2c29c008093c417f67057030b70010fe961981519c5148')
 provides=("youtubedl-gui")
 conflicts=("youtubedl-gui")
 makedepends=("cmake")
@@ -17,7 +17,9 @@ depends=("yt-dlp"
          "ffmpeg"
          "hicolor-icon-theme")
 
-optdepends=("breeze: Better looking theme than default one")
+optdepends=("breeze: Better looking theme than default one"
+          "libnotify: Notification at the end of download"
+)
 
 build() {
         cd ${_pkgname}

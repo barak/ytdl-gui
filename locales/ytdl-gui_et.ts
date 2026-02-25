@@ -79,7 +79,7 @@
     <name>ytdl</name>
     <message>
         <source>ytdl</source>
-        <translation>ytdl</translation>
+        <translation type="vanished">ytdl</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
@@ -204,6 +204,42 @@
     <message>
         <source>Download</source>
         <translation>Laadi alla</translation>
+    </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation>Yt allalaadija</translation>
+    </message>
+    <message>
+        <source>Best quality audio, the file will be bigger than with other quality levels.</source>
+        <translation>Parim helikvaliteet, võrreldes muude helivalikutega on sel puhul fail suurem.</translation>
+    </message>
+    <message>
+        <source>Lower quality audio, the file will be smaller than with other quality levels.</source>
+        <translation>Madalaim helikvaliteet, võrreldes muude helivalikutega on sel puhul fail väikseim.</translation>
+    </message>
+    <message>
+        <source>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</source>
+        <translation>(Soovitatav Apple&apos;i operatsioonisüsteemides) Failid on väiksemad, kuid universaalne tugi puudub ja tegemist on suletud vorminguga</translation>
+    </message>
+    <message>
+        <source>(Recommended for open-source systems) Small files and good performances but not supported everywhere</source>
+        <translation>(Soovitatav avatud lähtekoodiga operatsioonisüsteemides) Failid on väiksemad, kvaliteet on hea, kuid tugi päris kõikjal puudub</translation>
+    </message>
+    <message>
+        <source>(Recommended for most system) Best compatibility and good audio quality</source>
+        <translation>(Soovitatav enamustes) Parim ühilduvus ja mõistlik helikvaliteet</translation>
+    </message>
+    <message>
+        <source>Better audio reproduction but large files and not supported everywhere</source>
+        <translation>Parem heli taasesitus, aga failid on veidi suuremad ja pole päris kõikjal toetatud</translation>
+    </message>
+    <message>
+        <source>Better audio reproduction, really large files</source>
+        <translation type="vanished">Parim heli taasesitus, aga failid on hiidsuured</translation>
+    </message>
+    <message>
+        <source>Better audio reproduction but really large files</source>
+        <translation>Parem heli taasesitus, aga failid on hiidsuured</translation>
     </message>
 </context>
 </TS>

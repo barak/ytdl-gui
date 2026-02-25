@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>ytdl</class>
- <widget class="QMainWindow" name="ytdl">
+ <widget class="QMainWindow" name="Yt Downloader">
   <property name="enabled">
    <bool>true</bool>
   </property>
@@ -32,7 +32,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>ytdl</string>
+   <string>Yt Downloader</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QTabWidget" name="Tabs">
@@ -107,6 +107,12 @@
             <property name="enabled">
              <bool>true</bool>
             </property>
+            <property name="toolTip">
+             <string>Best quality audio, the file will be bigger than with other quality levels.</string>
+            </property>
+            <property name="whatsThis">
+             <string>Best quality audio, the file will be bigger than with other quality levels.</string>
+            </property>
             <property name="text">
              <string>Best</string>
             </property>
@@ -140,6 +146,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioLow">
+            <property name="toolTip">
+             <string>Lower quality audio, the file will be smaller than with other quality levels.</string>
+            </property>
+            <property name="whatsThis">
+             <string>Lower quality audio, the file will be smaller than with other quality levels.</string>
+            </property>
             <property name="text">
              <string>Low</string>
             </property>
@@ -177,6 +189,12 @@
          <layout class="QHBoxLayout" name="radiosMFormat">
           <item>
            <widget class="QRadioButton" name="radioAAC">
+            <property name="toolTip">
+             <string>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</string>
+            </property>
+            <property name="whatsThis">
+             <string>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</string>
+            </property>
             <property name="text">
              <string>AAC</string>
             </property>
@@ -187,6 +205,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioOGG">
+            <property name="toolTip">
+             <string>(Recommended for open-source systems) Small files and good performances but not supported everywhere</string>
+            </property>
+            <property name="whatsThis">
+             <string>(Recommended for open-source systems) Small files and good performances but not supported everywhere</string>
+            </property>
             <property name="text">
              <string>OGG</string>
             </property>
@@ -197,6 +221,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioMP3">
+            <property name="toolTip">
+             <string>(Recommended for most system) Best compatibility and good audio quality</string>
+            </property>
+            <property name="whatsThis">
+             <string>(Recommended for most system) Best compatibility and good audio quality</string>
+            </property>
             <property name="text">
              <string>MP3</string>
             </property>
@@ -210,6 +240,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioOPUS">
+            <property name="toolTip">
+             <string>Better audio reproduction but large files and not supported everywhere</string>
+            </property>
+            <property name="whatsThis">
+             <string>Better audio reproduction but large files and not supported everywhere</string>
+            </property>
             <property name="text">
              <string>OPUS</string>
             </property>
@@ -220,6 +256,12 @@
           </item>
           <item>
            <widget class="QRadioButton" name="radioWAV">
+            <property name="toolTip">
+             <string>Better audio reproduction but really large files</string>
+            </property>
+            <property name="whatsThis">
+             <string>Better audio reproduction but really large files</string>
+            </property>
             <property name="text">
              <string>WAV</string>
             </property>
@@ -526,9 +568,9 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="MQualityGroup"/>
-  <buttongroup name="VFormatGroup"/>
-  <buttongroup name="VResGroup"/>
   <buttongroup name="MFormatGroup"/>
+  <buttongroup name="VResGroup"/>
+  <buttongroup name="VFormatGroup"/>
+  <buttongroup name="MQualityGroup"/>
  </buttongroups>
 </ui>

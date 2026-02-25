@@ -1,0 +1,31 @@
+on:   
+  release:
+    types: [published]
+jobs:
+  Build:
+    runs-on: codeberg-tiny-lazy
+    steps:
+       - name: Checkout the repository
+         uses: actions/checkout@v4
+         with:
+           ref: 'master'
+       - name: Install dependencies
+         run: apt update && apt install build-essential cmake qt6-base-dev -y
+       - name: Patch
+         run: ls -R && patch < resources/forjeo-actions/forjeo-actions.diff src/mainactions.cpp
+       - name: Build
+         run: mkdir build && cd build && ls .. && cmake .. && make && cd ..
+       - name: Export build
+         run: mkdir -p artifacts/x86-64/ && mv build/youtubedl-gui artifacts/x86-64/
+       - uses: actions/upload-artifact@v3
+         with:
+           name: x86-64
+           path: artifacts/x86-64/
+       - name: Build the deb package
+         run: bash resources/debian/deb-amd64.sh artifacts/x86-64/youtubedl-gui
+       - name: Export deb package
+         run: mkdir -p artifacts/amd64-deb/ && mv ytdl-gui.deb artifacts/amd64-deb/
+       - uses: actions/upload-artifact@v3
+         with:
+           name: ytdl-gui-amd64.deb
+           path: artifacts/amd64-deb/ytdl-gui.deb

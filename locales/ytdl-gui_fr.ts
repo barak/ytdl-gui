@@ -79,11 +79,11 @@
     <name>ytdl</name>
     <message>
         <source>ytdl</source>
-        <translation>ytdl</translation>
+        <translation type="vanished">ytdl</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Musique&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Audio</source>
@@ -204,6 +204,38 @@
     <message>
         <source>Download</source>
         <translation>Télécharger</translation>
+    </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation>Téléchargeur de vidéos</translation>
+    </message>
+    <message>
+        <source>Best quality audio, the file will be bigger than with other quality levels.</source>
+        <translation>Meilleure qualité audio, le fichier sera plus gros qu&apos;avec qu&apos;avec les autres niveaux.</translation>
+    </message>
+    <message>
+        <source>Lower quality audio, the file will be smaller than with other quality levels.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>(Recommended for open-source systems) Small files and good performances but not supported everywhere</source>
+        <translation>(Recomendé pour les systèmes libres) Petits fichier et bonnes performances mais n&apos;est pas supporté partout</translation>
+    </message>
+    <message>
+        <source>(Recommended for most system) Best compatibility and good audio quality</source>
+        <translation>(Recommandé pour la plupart des systèmes) Meilleure compatibilité et bonne qualité audio</translation>
+    </message>
+    <message>
+        <source>Better audio reproduction but large files and not supported everywhere</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Better audio reproduction but really large files</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

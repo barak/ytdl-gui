@@ -27,7 +27,7 @@ ytdl::ytdl(QWidget *parent)
     //srand(time(NULL));
     srand(static_cast<unsigned int>(std::chrono::system_clock::now().time_since_epoch().count()));
     window_id=std::to_string(rand()%(99999-1)+1);
-    qDebug() << "[DEBUG] Internal window id: " << window_id;
+    qDebug() << "[DEBUG] Internal window id: " + window_id;
 
     //Initialize pointers
     ui->setupUi(this);

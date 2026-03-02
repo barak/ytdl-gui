@@ -16,6 +16,9 @@ downloadProgress::downloadProgress(Ui::downloadStatus* input) {
 void downloadProgress::updateStatus() {
     //get mainwindow pointer
     Ui::ytdl* main_ui = ytdl::getUiInstance();
+    std::string file_name = ytdl::getPrgPath();
+    //std::string file_name_str = file_name;
+    std::cout << file_name;
 
     download_ui->progressBar->setValue(0);
 
@@ -24,7 +27,7 @@ void downloadProgress::updateStatus() {
     int prog_num = 0;
 
     while (true) {
-        std::string file_name = "/tmp/ytdl_prg";
+        //std::string file_name_str = "/tmp/ytdl_prg";
         std::ifstream curr_file;
         curr_file.open(file_name.c_str(), std::fstream::in);
         if (curr_file.is_open()) {

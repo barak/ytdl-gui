@@ -8,9 +8,10 @@
 #include <QDebug>
 
 #include <QCoreApplication>
-
+#include "ytdl.h"
 
 mainCommand::mainCommand(std::string args) {
+    const QString& prg_file_name = QString::fromStdString(ytdl::getPrgPath());
     //setup args
     ytdl_command = QString::fromStdString(args);
 
@@ -19,15 +20,16 @@ mainCommand::mainCommand(std::string args) {
     shell_prog = "bash";
     arguments << "-c" << ytdl_command;
 
-    command->setStandardOutputFile("/tmp/ytdl_prg");
+    command->setStandardOutputFile(prg_file_name);
 }
 
 void mainCommand::download() {
     //output command before exec
     qDebug() << QCoreApplication::tr("[INFO] Yt-dlp command: ") << ytdl_command;
+    const char* prg_file_name = ytdl::getPrgPath().c_str();
 
     //remove temp files
-    remove("/tmp/ytdl_prg");
+    remove(prg_file_name);
     remove("/tmp/ytdl_stderr");
 
     //conections
@@ -43,6 +45,7 @@ void mainCommand::processResult(int result_num, QProcess::ExitStatus result_enum
     int errors = 0;
     std::string err_str;
     std::ifstream err_file("/tmp/ytdl_stderr");
+    const char* prg_file_name = ytdl::getPrgPath().c_str();
 
     if (err_file.good()) {
         getline(err_file, err_str);
@@ -58,7 +61,7 @@ void mainCommand::processResult(int result_num, QProcess::ExitStatus result_enum
     }
 
     //remove progress file
-    remove("/tmp/ytdl_prg");
+    remove(prg_file_name);
 
     emit returnFinished(errors);
     emit finished();

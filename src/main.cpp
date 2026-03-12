@@ -52,6 +52,7 @@ int main(int argc, char *argv[])
     QCoreApplication::setApplicationName(QString(QCoreApplication::tr("Youtube Downloader")));
     w.setWindowTitle( QCoreApplication::applicationName() );
     w.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
+    QGuiApplication::setDesktopFileName("page.codeberg.impromptux.ytdl-gui");
     w.show();
     return a.exec();
 }

@@ -221,8 +221,20 @@ void ytdl::printResult(int result_num) {
                 QMessageBox fail;
                 fail.setWindowIcon(QIcon::fromTheme("page.codeberg.impromptux.ytdl-gui"));
                 fail.setIcon(QMessageBox::Critical);
-                fail.setText(QCoreApplication::tr("Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats."));
-
+                std::ifstream fio("/tmp/ytdl_stderr", std::ios::in);
+                if (fio.is_open()) {
+                    std::string line;
+                    fail.setText(QCoreApplication::tr("Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.")+"\n"+"Error message:\n");
+                    while (std::getline(fio, line)) {
+                        if (fio.eof())
+                            break;
+                        fail.setText(fail.text()+QString::fromStdString(line));
+                    }
+                    fio.close();
+                }
+                else {
+                    fail.setText(QCoreApplication::tr("Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.")+"\n"+"Unknown error.");
+                }
                 if (no_feedback == false) {
                     fail.exec();
                 }

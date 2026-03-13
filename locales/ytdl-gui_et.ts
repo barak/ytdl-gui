@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Download succeded</source>
-        <translation>Téléchargement effectué</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>

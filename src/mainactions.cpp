@@ -12,6 +12,7 @@
 #include <QThread>
 #include <QFile>
 #include <QDebug>
+#include <QDir>
 
 std::string whitespace = " ";
 std::string quote = "'";
@@ -247,12 +248,25 @@ void ytdl::printResult(int result_num) {
 void ytdl::downloadAction() {
     std::string ytdl_prog;
     std::string embed_metadata;
-    if (!system("which yt-dlp > /dev/null 2>&1")){
-        ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+    std::ifstream fio("/tmp/ytdl_stderr", std::ios::in);
+    std::ifstream ytdl_prog_path(QDir::homePath().toStdString() + "/.config/ytdl-gui/yt-dlp.path", std::ios::in);
+    if (ytdl_prog_path) {
+        qDebug() << "[INFO] Found a .config/ytdl-gui/yt-dlp.path file.";
+        if (ytdl_prog_path.eof())
+            ytdl_prog = "yt-dlp";
+        else
+            std::getline(ytdl_prog_path, ytdl_prog);
+        fio.close();
+        ytdl_prog = ytdl_prog + " 2> /tmp/ytdl_stderr --no-warnings --all-subs";
         embed_metadata = "--embed-metadata ";
     } else {
-        ytdl_prog = "youtube-dl 2> /tmp/ytdl_stderr --no-warnings --all-subs";
-        embed_metadata = " ";
+        if (!system("which yt-dlp > /dev/null 2>&1")){
+            ytdl_prog = "yt-dlp 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+            embed_metadata = "--embed-metadata ";
+        } else {
+            ytdl_prog = "youtube-dl 2> /tmp/ytdl_stderr --no-warnings --all-subs";
+            embed_metadata = " ";
+        }
     }
     std::string url_str = quote + QString_to_str(ui->lineURL->text()) + quote;
     std::string directory_str = quote + QString_to_str(ui->lineBrowse->text()) + "/%(title)s.%(ext)s" + quote;

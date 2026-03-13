@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Download succeded</source>
-        <translation type="vanished">Téléchargement effectué</translation>
+        <translation>Téléchargement effectué</translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
@@ -62,6 +62,10 @@
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
         <translation>Le téléchargement a échoué. Si l’URL que vous avez fournie est correcte, réessayez avec d’autres résolutions ou formats.</translation>
+    </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation type="unfinished">Téléchargeur de vidéos</translation>
     </message>
 </context>
 <context>

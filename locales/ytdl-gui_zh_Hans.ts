@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Download succeded</source>
-        <translation type="vanished">Téléchargement effectué</translation>
+        <translation>Téléchargement effectué</translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
@@ -62,6 +62,10 @@
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
         <translation>失败！请重新检查输入是否有错误。如果网址正确，请尝试其他分辨率或格式。</translation>
+    </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation type="unfinished">Yt Downloader</translation>
     </message>
 </context>
 <context>
@@ -235,7 +239,11 @@
     </message>
     <message>
         <source>Better audio reproduction, really large files</source>
-        <translation>音质卓越，文件体积极大</translation>
+        <translation type="vanished">音质卓越，文件体积极大</translation>
+    </message>
+    <message>
+        <source>Better audio reproduction but really large files</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 </TS>

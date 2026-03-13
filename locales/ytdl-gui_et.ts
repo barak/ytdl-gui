@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Download succeded</source>
-        <translation type="vanished">Téléchargement effectué</translation>
+        <translation>Téléchargement effectué</translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
@@ -62,6 +62,10 @@
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
         <translation>Ei õnnestunud! Kontrolli sisendist võimalike vigade osas. Kui etteantud võrguaadress on õige, siis proovi muid resolutsioone ja vorminguid.</translation>
+    </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation type="unfinished">Yt allalaadija</translation>
     </message>
 </context>
 <context>

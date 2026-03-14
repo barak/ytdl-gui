@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Download succeded</source>
-        <translation>Téléchargement effectué</translation>
+        <translation>下载成功</translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation type="unfinished">Yt Downloader</translation>
+        <translation>Yt Downloader</translation>
     </message>
 </context>
 <context>
@@ -243,7 +243,7 @@
     </message>
     <message>
         <source>Better audio reproduction but really large files</source>
-        <translation type="unfinished"></translation>
+        <translation>音质更佳，但文件体积非常大</translation>
     </message>
 </context>
 </TS>

@@ -68,6 +68,16 @@
     <keyword>Utility</keyword>
   </keywords>
   <releases>
+        <release version="4.4.3" date="2026-03-14">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.3</url>
+          <description>
+            <ul>
+              <li>Add multiple windows support</li>
+              <li>Translate the app launcher in several languages</li>
+              <li>The application now have an icon under Wayland.</li>
+            </ul>
+          </description>
+        </release>
         <release version="4.4.1" date="2026-02-18">
           <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.1</url>
           <description>

@@ -13,7 +13,7 @@
     </message>
     <message>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Fortschritt</translation>
     </message>
     <message>
         <source>Youtube Downloader</source>
@@ -21,7 +21,7 @@
     </message>
     <message>
         <source>Invalid argument in config file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ungültiges Argument in der Konfigurationsdatei:</translation>
     </message>
     <message>
         <source>invalid argument</source>
@@ -29,19 +29,19 @@
     </message>
     <message>
         <source>out of range</source>
-        <translation type="unfinished"></translation>
+        <translation>außerhalb des Bereichs</translation>
     </message>
     <message>
         <source>undefined error</source>
-        <translation type="unfinished"></translation>
+        <translation>undefinierter Fehler</translation>
     </message>
     <message>
         <source>Invalid argument in config file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ungültiges Argument in der Konfigurationsdatei</translation>
     </message>
     <message>
         <source>Download Succeeded</source>
-        <translation type="unfinished"></translation>
+        <translation>Download erfolgreich</translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
@@ -53,11 +53,11 @@
     </message>
     <message>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Wähle einen Ordner</translation>
     </message>
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
-        <translation type="unfinished"></translation>
+        <translation>Fehlgeschlagen! Eingabe erneut auf Fehler überprüfen. Wenn die URL korrekt ist, versuche es mit einer anderen Lösungen oder Formaten.</translation>
     </message>
     <message>
         <source>Yt Downloader</source>
@@ -195,11 +195,11 @@
     </message>
     <message>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Durchsuchen...</translation>
     </message>
     <message>
         <source>Defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Standardeinstellungen</translation>
     </message>
     <message>
         <source>Download</source>
@@ -235,7 +235,7 @@
     </message>
     <message>
         <source>Better audio reproduction but really large files</source>
-        <translation type="unfinished"></translation>
+        <translation>Bessere Klangwiedergabe, aber sehr große Dateien</translation>
     </message>
 </context>
 </TS>

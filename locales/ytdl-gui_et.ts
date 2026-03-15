@@ -49,7 +49,7 @@
     </message>
     <message>
         <source>Download succeded</source>
-        <translation type="unfinished"></translation>
+        <translation>Allalaadimine õnnestus</translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
@@ -65,7 +65,7 @@
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation type="unfinished">Yt allalaadija</translation>
+        <translation>Yt allalaadija</translation>
     </message>
 </context>
 <context>

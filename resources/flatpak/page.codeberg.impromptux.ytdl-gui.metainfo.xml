@@ -68,6 +68,17 @@
     <keyword>Utility</keyword>
   </keywords>
   <releases>
+        <release version="4.4.4" date="2026-03-19">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.4</url>
+          <description>
+            <ul>
+              <li>Add Dutch translations (by Vistaus)</li>
+              <li>Update Chinese translations (by Outbreak2096)</li>
+              <li>Update Estonian translations (by Priit Jõerüüt)</li>
+              <li>Update German translations (by Mondstern)</li>
+            </ul>
+          </description>
+        </release>
         <release version="4.4.3" date="2026-03-14">
           <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.3</url>
           <description>

@@ -96,6 +96,7 @@ set(TRANSLATIONS
     locales/ytdl-gui_et.qm
     locales/ytdl-gui_es.qm
     locales/ytdl-gui_zh_Hans.qm
+    locales/ytdl-gui_nl.qm
     # Add other translation files here
 )
 

@@ -5,78 +5,78 @@
     <name>QCoreApplication</name>
     <message>
         <source>Youtube Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation>YouTube-downloader</translation>
     </message>
     <message>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Kies een map</translation>
     </message>
     <message>
         <source>Cancel download in progress?</source>
-        <translation type="unfinished"></translation>
+        <translation>Weet je zeker dat je het downloaden wilt afbreken?</translation>
     </message>
     <message>
         <source>Saving and converting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met opslaan en converteren…</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Voortgang</translation>
     </message>
     <message>
         <source>Invalid argument in config file:</source>
-        <translation type="unfinished"></translation>
+        <translation>Ongeldige optie in instellingenbestand:</translation>
     </message>
     <message>
         <source>invalid argument</source>
-        <translation type="unfinished"></translation>
+        <translation>ongeldige optie</translation>
     </message>
     <message>
         <source>out of range</source>
-        <translation type="unfinished"></translation>
+        <translation>buiten bereik</translation>
     </message>
     <message>
         <source>undefined error</source>
-        <translation type="unfinished"></translation>
+        <translation>onbekende foutmelding</translation>
     </message>
     <message>
         <source>Invalid argument in config file</source>
-        <translation type="unfinished"></translation>
+        <translation>Ongeldige optie in instellingenbestand</translation>
     </message>
     <message>
         <source>Download Succeeded</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloaden voltooid</translation>
     </message>
     <message>
         <source>Download succeded</source>
-        <translation type="unfinished"></translation>
+        <translation>Downloaden voltooid</translation>
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
-        <translation type="unfinished"></translation>
+        <translation>[INFO] Yt-dlp-opdracht: </translation>
     </message>
     <message>
         <source>[ERROR] QProcess failed with error code: </source>
-        <translation type="unfinished"></translation>
+        <translation>[FOUTMELDING] QProcess is afgesloten met foutcode: </translation>
     </message>
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
-        <translation type="unfinished"></translation>
+        <translation>Mislukt! Controleer de ingevoerde tekst op fouten. Als de url klopt, probeer dan andere resoluties of bestandsformaten.</translation>
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation type="unfinished">Téléchargeur de vidéos</translation>
+        <translation>Yt-downloader</translation>
     </message>
 </context>
 <context>
     <name>downloadStatus</name>
     <message>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialoogvenster</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bezig met downloaden…</translation>
     </message>
 </context>
 <context>
@@ -87,159 +87,159 @@
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Muziek&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation type="unfinished"></translation>
+        <translation>Audio</translation>
     </message>
     <message>
         <source>Quality:</source>
-        <translation type="unfinished"></translation>
+        <translation>Kwaliteit:</translation>
     </message>
     <message>
         <source>Best</source>
-        <translation type="unfinished"></translation>
+        <translation>Beste</translation>
     </message>
     <message>
         <source>Good</source>
-        <translation type="unfinished"></translation>
+        <translation>Goed</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Gemiddeld</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>Laag</translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Formaat:</translation>
     </message>
     <message>
         <source>AAC</source>
-        <translation type="unfinished"></translation>
+        <translation>Aac</translation>
     </message>
     <message>
         <source>OGG</source>
-        <translation type="unfinished"></translation>
+        <translation>Ogg</translation>
     </message>
     <message>
         <source>MP3</source>
-        <translation type="unfinished"></translation>
+        <translation>Mp3</translation>
     </message>
     <message>
         <source>OPUS</source>
-        <translation type="unfinished"></translation>
+        <translation>Opus</translation>
     </message>
     <message>
         <source>WAV</source>
-        <translation type="unfinished"></translation>
+        <translation>Wav</translation>
     </message>
     <message>
         <source>Video</source>
-        <translation type="unfinished"></translation>
+        <translation>Video</translation>
     </message>
     <message>
         <source>Max Resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>Max. resolutie:</translation>
     </message>
     <message>
         <source>4K</source>
-        <translation type="unfinished"></translation>
+        <translation>4K</translation>
     </message>
     <message>
         <source>1440p</source>
-        <translation type="unfinished"></translation>
+        <translation>1440p</translation>
     </message>
     <message>
         <source>1080p</source>
-        <translation type="unfinished"></translation>
+        <translation>1080p</translation>
     </message>
     <message>
         <source>720p</source>
-        <translation type="unfinished"></translation>
+        <translation>720p</translation>
     </message>
     <message>
         <source>480p</source>
-        <translation type="unfinished"></translation>
+        <translation>480p</translation>
     </message>
     <message>
         <source>360p</source>
-        <translation type="unfinished"></translation>
+        <translation>360p</translation>
     </message>
     <message>
         <source>Preferred Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Voorkeursformaat:</translation>
     </message>
     <message>
         <source>3GP</source>
-        <translation type="unfinished"></translation>
+        <translation>3gp</translation>
     </message>
     <message>
         <source>FLV</source>
-        <translation type="unfinished"></translation>
+        <translation>Flv</translation>
     </message>
     <message>
         <source>MP4</source>
-        <translation type="unfinished"></translation>
+        <translation>Mp4</translation>
     </message>
     <message>
         <source>WEBM</source>
-        <translation type="unfinished"></translation>
+        <translation>Webm</translation>
     </message>
     <message>
         <source>Enter URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Voer een url in:</translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>Afspeellijst</translation>
     </message>
     <message>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Bladeren…</translation>
     </message>
     <message>
         <source>Defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Standaardwaarden</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Gedownload</translation>
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation>Yt-downloader</translation>
     </message>
     <message>
         <source>Best quality audio, the file will be bigger than with other quality levels.</source>
-        <translation type="unfinished"></translation>
+        <translation>Let op: bij de keuze voor beste kwaliteit, zal de bestandsgrootte flink toenemen.</translation>
     </message>
     <message>
         <source>Lower quality audio, the file will be smaller than with other quality levels.</source>
-        <translation type="unfinished"></translation>
+        <translation>Bij lagere kwaliteit zal de bestandsgrootte flink afnemen.</translation>
     </message>
     <message>
         <source>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</source>
-        <translation type="unfinished"></translation>
+        <translation>(Aanbevolen voor Apple-systemen) Kleine bestanden, maar minder goed ondersteund en gesloten formaat</translation>
     </message>
     <message>
         <source>(Recommended for open-source systems) Small files and good performances but not supported everywhere</source>
-        <translation type="unfinished"></translation>
+        <translation>(Aanbevolen voor opensourcesystemen) Kleine bestanden, goede prestaties, maar minder goed ondersteund</translation>
     </message>
     <message>
         <source>(Recommended for most system) Best compatibility and good audio quality</source>
-        <translation type="unfinished"></translation>
+        <translation>(Aanbevolen voor de meeste systemen) Beste compatibiliteit, goede geluidskwaliteit</translation>
     </message>
     <message>
         <source>Better audio reproduction but large files and not supported everywhere</source>
-        <translation type="unfinished"></translation>
+        <translation>Betere geluidskwaliteit, maar grotere bestanden en minder goed ondersteund</translation>
     </message>
     <message>
         <source>Better audio reproduction but really large files</source>
-        <translation type="unfinished"></translation>
+        <translation>Betere geluidskwaliteit, maar hele grote bestanden</translation>
     </message>
 </context>
 </TS>

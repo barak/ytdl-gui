@@ -5,11 +5,11 @@
     <name>QCoreApplication</name>
     <message>
         <source>Cancel download in progress?</source>
-        <translation type="unfinished"></translation>
+        <translation>Laufenden Download abbrechen?</translation>
     </message>
     <message>
         <source>Saving and converting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Speichert und konvertiert...</translation>
     </message>
     <message>
         <source>Progress</source>
@@ -25,7 +25,7 @@
     </message>
     <message>
         <source>invalid argument</source>
-        <translation type="unfinished"></translation>
+        <translation>Ungültiges Argument</translation>
     </message>
     <message>
         <source>out of range</source>
@@ -45,11 +45,11 @@
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
-        <translation type="unfinished"></translation>
+        <translation>[INFO] Yt-dlp Befehl: </translation>
     </message>
     <message>
         <source>[ERROR] QProcess failed with error code: </source>
-        <translation type="unfinished"></translation>
+        <translation>[ERROR] QProcess abgebrochen mit Fehlercode: </translation>
     </message>
     <message>
         <source>Select a folder</source>
@@ -61,18 +61,18 @@
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation>Yt Downloader</translation>
     </message>
     <message>
         <source>Download succeded</source>
-        <translation type="unfinished"></translation>
+        <translation>Download erfolgreich</translation>
     </message>
 </context>
 <context>
     <name>downloadStatus</name>
     <message>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Dialog</translation>
     </message>
     <message>
         <source>Downloading...</source>
@@ -83,7 +83,7 @@
     <name>ytdl</name>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Musik&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Audio</source>
@@ -103,15 +103,15 @@
     </message>
     <message>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Mittel</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>Niedrig</translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Format:</translation>
     </message>
     <message>
         <source>AAC</source>
@@ -139,7 +139,7 @@
     </message>
     <message>
         <source>Max Resolution:</source>
-        <translation type="unfinished"></translation>
+        <translation>Max Auflösung:</translation>
     </message>
     <message>
         <source>4K</source>
@@ -167,7 +167,7 @@
     </message>
     <message>
         <source>Preferred Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Bevorzugtes Format:</translation>
     </message>
     <message>
         <source>3GP</source>
@@ -187,11 +187,11 @@
     </message>
     <message>
         <source>Enter URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>URL eingeben:</translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>Playlist</translation>
     </message>
     <message>
         <source>Browse...</source>
@@ -207,31 +207,31 @@
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation>Yt Downloader</translation>
     </message>
     <message>
         <source>Best quality audio, the file will be bigger than with other quality levels.</source>
-        <translation type="unfinished"></translation>
+        <translation>Beste Audioqualität, die Datei wird größer als bei anderen Qualitätsstufen.</translation>
     </message>
     <message>
         <source>Lower quality audio, the file will be smaller than with other quality levels.</source>
-        <translation type="unfinished"></translation>
+        <translation>Niedrige Audioqualität, die Datei wird kleiner als bei anderen Qualitätsstufen.</translation>
     </message>
     <message>
         <source>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</source>
-        <translation type="unfinished"></translation>
+        <translation>(Empfohlen für Apple Geräte) Kleine Dateien, allerdings ist das Format proprietär und wird nicht überall unterstützt</translation>
     </message>
     <message>
         <source>(Recommended for open-source systems) Small files and good performances but not supported everywhere</source>
-        <translation type="unfinished"></translation>
+        <translation>(Empfohlen für Open-Source Systeme) Kleine Dateien und gute Performance, allerdings nicht überall unterstützt</translation>
     </message>
     <message>
         <source>(Recommended for most system) Best compatibility and good audio quality</source>
-        <translation type="unfinished"></translation>
+        <translation>(Empfohlen für die meisten Systeme) Beste Kompatibilität und gute Audioqualität</translation>
     </message>
     <message>
         <source>Better audio reproduction but large files and not supported everywhere</source>
-        <translation type="unfinished"></translation>
+        <translation>Bessere Audioqualität, allerdings große Dateien und nicht überall unterstützt</translation>
     </message>
     <message>
         <source>Better audio reproduction but really large files</source>

@@ -59,6 +59,7 @@ You can also contribute by [translating the app](https://translate.codeberg.org/
 - [Outbreak2096](https://codeberg.org/Outbreak2096) : Chinese translation
 - [Vistaus](https://codeberg.org/Vistaus) : Dutch translation
 - [Mondstern](https://codeberg.org/Mondstern) : German translation (he is also the author of these awesome icons: [AndroidAcrylicIconPack](https://codeberg.org/mondstern/AndroidAcrylicIconPack))
+- [North-DaCoder](https://codeberg.org/North-DaCoder)
 - [Contributors of youtubedl-gui](https://codeberg.org/impromptux/ytdl-gui/activity/contributors)
 
 ## TODO

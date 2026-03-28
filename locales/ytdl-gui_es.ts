@@ -59,6 +59,14 @@
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
         <translation type="unfinished"></translation>
     </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Download succeded</source>
+        <translation type="unfinished"></translation>
+    </message>
 </context>
 <context>
     <name>downloadStatus</name>

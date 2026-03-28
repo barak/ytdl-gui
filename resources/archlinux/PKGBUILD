@@ -1,14 +1,14 @@
 # Maintainer: Antoine Impromptux <impromptux (a) mailo dot com>
 pkgname=youtubedl-gui
 _pkgname=ytdl-gui
-pkgver=4.1
+pkgver=4.4.3
 pkgrel=1
 arch=('x86_64'
       'aarch64')
 license=('GPL3')
 pkgdesc="Download videos and audio from various sources(1000+) including YouTube."
-source=("https://codeberg.org/impromptux/ytdl-gui/archive/v4.4.zip")
-sha256sums=('ac3f34ebc1c106a05d2c29c008093c417f67057030b70010fe961981519c5148')
+source=("https://codeberg.org/impromptux/ytdl-gui/archive/v4.4.3.zip")
+sha256sums=('ad98006236c3420adaaa9f33c5be3342ee3a2253d15314b4b2faf193d585a1f2')
 provides=("youtubedl-gui")
 conflicts=("youtubedl-gui")
 makedepends=("cmake")

@@ -7,9 +7,13 @@
   <name>Yt Downloader</name>
   <name xml:lang="fr">Téléchargeur de vidéos</name>
   <name xml:lang="et">Videote allalaadija</name>
+  <name xml:lang="zh_Hans">YouTube 下载器</name>
   <summary>Download videos and music from various sources.</summary>
   <summary xml:lang="fr">Télécharger des vidéos et de la musique à partir de sites web.</summary>
   <summary xml:lang="et">Laadi videoid ja muusikat alla erinevatest allikatest.</summary>
+  <summary xml:lang="zh_Hans">从多种来源下载视频和音乐。</summary>
+  <summary xml:lang="nl">Download video's en muziek uit verschillende bronnen.</summary>
+  <summary xml:lang="de">Lade Videos und Musik aus verschiedenen Quellen herunter.</summary>
   <url type="homepage">https://codeberg.org/impromptux/ytdl-gui</url>
   <url type="bugtracker">https://codeberg.org/impromptux/ytdl-gui/issues</url>
   <url type="vcs-browser">https://codeberg.org/impromptux/ytdl-gui</url>
@@ -36,6 +40,19 @@
       Rakendus toetab enam kui tuhandet veebisaiti ja kaheksat erinevat vormingut, sealhulgas mp3, mp4 ja webm.
       Saad valida erinevate resolutsioonide ja helikvaliteedi vahel võid ka laadida alla terveid esitusloendeid.
     </p>
+    <p xml:lang="zh_Hans">
+      这款简单易用的工具支持从 YouTube、Dailymotion、Vimeo 等 1000 多个网站下载视频或音频，可以选择 mp3、mp4 和 webm 等 8 种不同的格式。您可以选择不同的分辨率和音质，还支持下载整个播放列表。
+    </p>
+    <p xml:lang="nl">
+      Een eenvoudig hulpmiddel voor het downloaden van video en audio uit verschillende bronnen, zoals YouTube, Dailymotion en Vimeo.
+      In totaal worden meer dan 1000 websites en 8 verschillende formaten ondersteund, waaronder mp3, mp4 en webm.
+      Kies uit verschillende resoluties en geluidskwaliteiten, of download hele afspeellijsten.
+    </p>
+    <p xml:lang="de">
+      Ein einfach zu bedienendes Tool zum Herunterladen von Videos oder Audios aus verschiedenen Quellen, einschließlich Youtube, Dailymotion, Vimeo...
+      Es unterstützt mehr als 1000 Websites und 8 verschiedene Formate, einschließlich mp3, mp4 und webm.
+      Sie können zwischen verschiedenen Auflösungen und Audioqualität wählen. Es unterstützt auch das Herunterladen ganzer Wiedergabelisten.
+    </p>
   </description>
   
   <launchable type="desktop-id">page.codeberg.impromptux.ytdl-gui.desktop</launchable>
@@ -45,12 +62,18 @@
       <caption>The main window of the app. (Video tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Vidéo)</caption>
       <caption xml:lang="et">Rakenduse põhiakna vaade. (Video vahekaart)</caption>
+      <caption xml:lang="zh_Hans">应用的主窗口。（视频标签页）</caption>
+      <caption xml:lang="nl">Hoofdvenster van de app. (Video-tabblad)</caption>
+      <caption xml:lang="de">Das Hauptfenster der App. (Registerkarte „Video“)</caption>
     </screenshot>
     <screenshot>
       <image>https://codeberg.org/impromptux/ytdl-gui/raw/commit/d23123e4b8c6801b330ec58d9890b5939cb75b4f/resources/screenshot1.png</image>
       <caption>The main window of the app. (Audio tab)</caption>
       <caption xml:lang="fr">La fenêtre principale de l’application. (Onglet Audio)</caption>
       <caption xml:lang="et">Rakenduse põhiakna vaade. (Helifaili vahekaart)</caption>
+      <caption xml:lang="zh_Hans">应用的主窗口。（音频标签页）</caption>
+      <caption xml:lang="nl">Hoofdvenster van de app. (Audio-tabblad)</caption>
+      <caption xml:lang="de">Das Hauptfenster der App. (Registerkarte „Audio“)</caption>
     </screenshot>
   </screenshots>
   <content_rating type="oars-1.1" />
@@ -68,6 +91,36 @@
     <keyword>Utility</keyword>
   </keywords>
   <releases>
+        <release version="4.4.6" date="2026-03-28">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.6</url>
+          <description>
+            <ul>
+              <li>Update German translations (by North-DaCoder)</li>
+              <li>Improve interface</li>              
+            </ul>
+          </description>
+        </release>
+        <release version="4.4.4" date="2026-03-19">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.4</url>
+          <description>
+            <ul>
+              <li>Add Dutch translations (by Vistaus)</li>
+              <li>Update Chinese translations (by Outbreak2096)</li>
+              <li>Update Estonian translations (by Priit Jõerüüt)</li>
+              <li>Update German translations (by Mondstern)</li>
+            </ul>
+          </description>
+        </release>
+        <release version="4.4.3" date="2026-03-14">
+          <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.3</url>
+          <description>
+            <ul>
+              <li>Add multiple windows support</li>
+              <li>Translate the app launcher in several languages</li>
+              <li>The application now have an icon under Wayland.</li>
+            </ul>
+          </description>
+        </release>
         <release version="4.4.1" date="2026-02-18">
           <url type="details">https://codeberg.org/impromptux/ytdl-gui/releases/tag/v4.4.1</url>
           <description>

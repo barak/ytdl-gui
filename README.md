@@ -6,20 +6,22 @@ A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork o
 
 
 ## Installation Instructions
-There are packages of the original youtubedl-gui for arch-based linux distros (using the aur) and Debian based distro.
-If you prefer you can also build from sources (see below) or use flatpak to use this fork instead of the original youtubedl-gui.
+There are official packages for Debian and Alpine based distro.
+If you prefer you can also build from sources (see below) or use flatpak.
 ### Arch linux and Manjaro
 You can build it for Arch Linux and Arch Linux-based distribution by folowing the instructions [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux).
+There are also packages of the original youtubedl-gui for arch-based linux distros (using the aur).
 
 ### Debian and Ubuntu
 For a system running Debian, Ubuntu, Linux Mint, LMDE or any Debian-based linux distribution install instruction are [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian).
 
 ### Flatpak
-It is also possible to install the application via Flatpak .<br/>
+It is also possible to install the application via Flatpak but the app may take longer time to start and the size of the update will be much greater. Please note that Flatpak's security features also make apps less vulnerable to security breaches.<br/>
 You can find the app on Flathub [here](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui).
 
 ### Alpine Linux
-Currently, there is no package for Alpine Linux, you will need to build it from source. There are some Alpine Linux specific build instruction [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Alpine).
+There are official packages for Alpine available [here](https://codeberg.org/impromptux/-/packages/alpine/youtubedl-gui/) but they are quite outdated. There is also a pending merge request to include youtubedl-gui in the Alpine Linux community repo.<br/>
+If you want to build it from source, there are some Alpine Linux specific build instruction [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Alpine).
 
 ## HiDPI Support
 This application does support HiDPI displays even though its size is fixed.
@@ -49,11 +51,15 @@ To install after having installed the correct dependencies:<br/><br/>
 ## Contributing
 If you want to contribute you can [fork the repo](https://codeberg.org/impromptux/ytdl-gui/fork) and open a pull request with a description of your changes.
 If you have a suggestion or a bug to report you can [open an issue](https://codeberg.org/impromptux/ytdl-gui/issues)
+You can also contribute by [translating the app](https://translate.codeberg.org/engage/ytdl-gui/)
 
 ## Contributors
 - Jason Goulet-Lipman: Original youtubedl-gui
 - [jrtcdbrg](https://codeberg.org/jrtcdbrg) : Estonian translations
 - [Outbreak2096](https://codeberg.org/Outbreak2096) : Chinese translation
+- [Vistaus](https://codeberg.org/Vistaus) : Dutch translation
+- [Mondstern](https://codeberg.org/Mondstern) : German translation (he is also the author of these awesome icons: [AndroidAcrylicIconPack](https://codeberg.org/mondstern/AndroidAcrylicIconPack))
+- [North-DaCoder](https://codeberg.org/North-DaCoder)
 - [Contributors of youtubedl-gui](https://codeberg.org/impromptux/ytdl-gui/activity/contributors)
 
 ## TODO
@@ -66,3 +72,4 @@ If you have a suggestion or a bug to report you can [open an issue](https://code
 - [x] Show a notification when a download finish and the windows is in the background
 - [x] Write metadata for audio files
 - [ ] Remove special characters from files names
+- [ ] Add an option to configure the path of yt-dlp, ffmpeg...

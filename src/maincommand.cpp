@@ -25,7 +25,7 @@ mainCommand::mainCommand(std::string args) {
 
 void mainCommand::download() {
     //output command before exec
-    qDebug() << QCoreApplication::tr("[INFO] Yt-dlp command: ") << ytdl_command;
+    qDebug() << QCoreApplication::tr("[INFO] Yt-dlp command: ") + ytdl_command;
     const char* prg_file_name = ytdl::getPrgPath().c_str();
 
     //remove temp files

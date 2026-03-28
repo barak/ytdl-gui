@@ -1,97 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="de_DE">
+<TS version="2.1" language="nl">
 <context>
     <name>QCoreApplication</name>
     <message>
-        <source>Cancel download in progress?</source>
-        <translation>Laufenden Download abbrechen?</translation>
-    </message>
-    <message>
-        <source>Saving and converting...</source>
-        <translation>Speichert und konvertiert...</translation>
-    </message>
-    <message>
-        <source>Progress</source>
-        <translation>Fortschritt</translation>
-    </message>
-    <message>
         <source>Youtube Downloader</source>
-        <translation>Video-Downloader</translation>
-    </message>
-    <message>
-        <source>Invalid argument in config file:</source>
-        <translation>Ungültiges Argument in der Konfigurationsdatei:</translation>
-    </message>
-    <message>
-        <source>invalid argument</source>
-        <translation>Ungültiges Argument</translation>
-    </message>
-    <message>
-        <source>out of range</source>
-        <translation>außerhalb des Bereichs</translation>
-    </message>
-    <message>
-        <source>undefined error</source>
-        <translation>undefinierter Fehler</translation>
-    </message>
-    <message>
-        <source>Invalid argument in config file</source>
-        <translation>Ungültiges Argument in der Konfigurationsdatei</translation>
-    </message>
-    <message>
-        <source>Download Succeeded</source>
-        <translation>Download erfolgreich</translation>
-    </message>
-    <message>
-        <source>[INFO] Yt-dlp command: </source>
-        <translation>[INFO] Yt-dlp Befehl: </translation>
-    </message>
-    <message>
-        <source>[ERROR] QProcess failed with error code: </source>
-        <translation>[ERROR] QProcess abgebrochen mit Fehlercode: </translation>
+        <translation>YouTube-downloader</translation>
     </message>
     <message>
         <source>Select a folder</source>
-        <translation>Wähle einen Ordner</translation>
+        <translation>Kies een map</translation>
     </message>
     <message>
-        <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
-        <translation>Fehlgeschlagen! Eingabe erneut auf Fehler überprüfen. Wenn die URL korrekt ist, versuche es mit einer anderen Lösungen oder Formaten.</translation>
+        <source>Cancel download in progress?</source>
+        <translation>Weet je zeker dat je het downloaden wilt afbreken?</translation>
     </message>
     <message>
-        <source>Yt Downloader</source>
-        <translation>Yt Downloader</translation>
+        <source>Saving and converting...</source>
+        <translation>Bezig met opslaan en converteren…</translation>
+    </message>
+    <message>
+        <source>Progress</source>
+        <translation>Voortgang</translation>
+    </message>
+    <message>
+        <source>Invalid argument in config file:</source>
+        <translation>Ongeldige optie in instellingenbestand:</translation>
+    </message>
+    <message>
+        <source>invalid argument</source>
+        <translation>ongeldige optie</translation>
+    </message>
+    <message>
+        <source>out of range</source>
+        <translation>buiten bereik</translation>
+    </message>
+    <message>
+        <source>undefined error</source>
+        <translation>onbekende foutmelding</translation>
+    </message>
+    <message>
+        <source>Invalid argument in config file</source>
+        <translation>Ongeldige optie in instellingenbestand</translation>
+    </message>
+    <message>
+        <source>Download Succeeded</source>
+        <translation>Downloaden voltooid</translation>
     </message>
     <message>
         <source>Download succeded</source>
-        <translation>Download erfolgreich</translation>
+        <translation>Downloaden voltooid</translation>
+    </message>
+    <message>
+        <source>[INFO] Yt-dlp command: </source>
+        <translation>[INFO] Yt-dlp-opdracht: </translation>
+    </message>
+    <message>
+        <source>[ERROR] QProcess failed with error code: </source>
+        <translation>[FOUTMELDING] QProcess is afgesloten met foutcode: </translation>
+    </message>
+    <message>
+        <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
+        <translation>Mislukt! Controleer de ingevoerde tekst op fouten. Als de url klopt, probeer dan andere resoluties of bestandsformaten.</translation>
+    </message>
+    <message>
+        <source>Yt Downloader</source>
+        <translation>Yt-downloader</translation>
     </message>
 </context>
 <context>
     <name>downloadStatus</name>
     <message>
         <source>Dialog</source>
-        <translation>Dialog</translation>
+        <translation>Dialoogvenster</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation>Download läuft...</translation>
+        <translation>Bezig met downloaden…</translation>
     </message>
 </context>
 <context>
     <name>ytdl</name>
     <message>
+        <source>ytdl</source>
+        <translation type="vanished">ytdl</translation>
+    </message>
+    <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Musik&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Muziek&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation></translation>
+        <translation>Audio</translation>
     </message>
     <message>
         <source>Quality:</source>
-        <translation>Audioqualität:</translation>
+        <translation>Kwaliteit:</translation>
     </message>
     <message>
         <source>Best</source>
@@ -99,143 +103,143 @@
     </message>
     <message>
         <source>Good</source>
-        <translation>Gut</translation>
+        <translation>Goed</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation>Mittel</translation>
+        <translation>Gemiddeld</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation>Niedrig</translation>
+        <translation>Laag</translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation>Format:</translation>
+        <translation>Formaat:</translation>
     </message>
     <message>
         <source>AAC</source>
-        <translation></translation>
+        <translation>Aac</translation>
     </message>
     <message>
         <source>OGG</source>
-        <translation></translation>
+        <translation>Ogg</translation>
     </message>
     <message>
         <source>MP3</source>
-        <translation></translation>
+        <translation>Mp3</translation>
     </message>
     <message>
         <source>OPUS</source>
-        <translation></translation>
+        <translation>Opus</translation>
     </message>
     <message>
         <source>WAV</source>
-        <translation></translation>
+        <translation>Wav</translation>
     </message>
     <message>
         <source>Video</source>
-        <translation></translation>
+        <translation>Video</translation>
     </message>
     <message>
         <source>Max Resolution:</source>
-        <translation>Max Auflösung:</translation>
+        <translation>Max. resolutie:</translation>
     </message>
     <message>
         <source>4K</source>
-        <translation></translation>
+        <translation>4K</translation>
     </message>
     <message>
         <source>1440p</source>
-        <translation></translation>
+        <translation>1440p</translation>
     </message>
     <message>
         <source>1080p</source>
-        <translation></translation>
+        <translation>1080p</translation>
     </message>
     <message>
         <source>720p</source>
-        <translation></translation>
+        <translation>720p</translation>
     </message>
     <message>
         <source>480p</source>
-        <translation></translation>
+        <translation>480p</translation>
     </message>
     <message>
         <source>360p</source>
-        <translation></translation>
+        <translation>360p</translation>
     </message>
     <message>
         <source>Preferred Format:</source>
-        <translation>Bevorzugtes Format:</translation>
+        <translation>Voorkeursformaat:</translation>
     </message>
     <message>
         <source>3GP</source>
-        <translation></translation>
+        <translation>3gp</translation>
     </message>
     <message>
         <source>FLV</source>
-        <translation></translation>
+        <translation>Flv</translation>
     </message>
     <message>
         <source>MP4</source>
-        <translation></translation>
+        <translation>Mp4</translation>
     </message>
     <message>
         <source>WEBM</source>
-        <translation></translation>
+        <translation>Webm</translation>
     </message>
     <message>
         <source>Enter URL:</source>
-        <translation>URL eingeben:</translation>
+        <translation>Voer een url in:</translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation>Playlist</translation>
+        <translation>Afspeellijst</translation>
     </message>
     <message>
         <source>Browse...</source>
-        <translation>Durchsuchen...</translation>
+        <translation>Bladeren…</translation>
     </message>
     <message>
         <source>Defaults</source>
-        <translation>Standardeinstellungen</translation>
+        <translation>Standaardwaarden</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation>Herunterladen</translation>
+        <translation>Gedownload</translation>
     </message>
     <message>
         <source>Yt Downloader</source>
-        <translation>Yt Downloader</translation>
+        <translation>Yt-downloader</translation>
     </message>
     <message>
         <source>Best quality audio, the file will be bigger than with other quality levels.</source>
-        <translation>Beste Audioqualität, die Datei wird größer als bei anderen Qualitätsstufen.</translation>
+        <translation>Let op: bij de keuze voor beste kwaliteit, zal de bestandsgrootte flink toenemen.</translation>
     </message>
     <message>
         <source>Lower quality audio, the file will be smaller than with other quality levels.</source>
-        <translation>Niedrige Audioqualität, die Datei wird kleiner als bei anderen Qualitätsstufen.</translation>
+        <translation>Bij lagere kwaliteit zal de bestandsgrootte flink afnemen.</translation>
     </message>
     <message>
         <source>(Recommended for Apple’s systems) Small files but not universally supported and proprietary</source>
-        <translation>(Empfohlen für Apple Geräte) Kleine Dateien, allerdings ist das Format proprietär und wird nicht überall unterstützt</translation>
+        <translation>(Aanbevolen voor Apple-systemen) Kleine bestanden, maar minder goed ondersteund en gesloten formaat</translation>
     </message>
     <message>
         <source>(Recommended for open-source systems) Small files and good performances but not supported everywhere</source>
-        <translation>(Empfohlen für Open-Source Systeme) Kleine Dateien und gute Performance, allerdings nicht überall unterstützt</translation>
+        <translation>(Aanbevolen voor opensourcesystemen) Kleine bestanden, goede prestaties, maar minder goed ondersteund</translation>
     </message>
     <message>
         <source>(Recommended for most system) Best compatibility and good audio quality</source>
-        <translation>(Empfohlen für die meisten Systeme) Beste Kompatibilität und gute Audioqualität</translation>
+        <translation>(Aanbevolen voor de meeste systemen) Beste compatibiliteit, goede geluidskwaliteit</translation>
     </message>
     <message>
         <source>Better audio reproduction but large files and not supported everywhere</source>
-        <translation>Bessere Audioqualität, allerdings große Dateien und nicht überall unterstützt</translation>
+        <translation>Betere geluidskwaliteit, maar grotere bestanden en minder goed ondersteund</translation>
     </message>
     <message>
         <source>Better audio reproduction but really large files</source>
-        <translation>Bessere Klangwiedergabe, aber sehr große Dateien</translation>
+        <translation>Betere geluidskwaliteit, maar hele grote bestanden</translation>
     </message>
 </context>
 </TS>

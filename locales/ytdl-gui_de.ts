@@ -57,7 +57,7 @@
     </message>
     <message>
         <source>Failed! Recheck input for errors. If the url you provided is correct, try with other resolutions or formats.</source>
-        <translation>Fehlgeschlagen! Eingabe erneut auf Fehler überprüfen. Wenn die URL korrekt ist, versuche es mit einer anderen Lösungen oder Formaten.</translation>
+        <translation>Fehlgeschlagen! Eingabe erneut auf Fehler überprüfen. Wenn die URL korrekt ist, versuche es mit anderen Lösungen oder Formaten.</translation>
     </message>
     <message>
         <source>Yt Downloader</source>

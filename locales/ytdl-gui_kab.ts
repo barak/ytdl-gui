@@ -5,11 +5,11 @@
     <name>QCoreApplication</name>
     <message>
         <source>Youtube Downloader</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished">Amsader n Youtube</translation>
     </message>
     <message>
         <source>Select a folder</source>
-        <translation type="unfinished"></translation>
+        <translation>Fren akaram</translation>
     </message>
     <message>
         <source>Cancel download in progress?</source>
@@ -17,11 +17,11 @@
     </message>
     <message>
         <source>Saving and converting...</source>
-        <translation type="unfinished"></translation>
+        <translation>Asekles akked uselket...</translation>
     </message>
     <message>
         <source>Progress</source>
-        <translation type="unfinished"></translation>
+        <translation>Asfari</translation>
     </message>
     <message>
         <source>Invalid argument in config file:</source>
@@ -29,7 +29,7 @@
     </message>
     <message>
         <source>invalid argument</source>
-        <translation type="unfinished"></translation>
+        <translation>Tiɣiret tarameɣtut</translation>
     </message>
     <message>
         <source>out of range</source>
@@ -37,7 +37,7 @@
     </message>
     <message>
         <source>undefined error</source>
-        <translation type="unfinished"></translation>
+        <translation>Tuccḍa tarussint</translation>
     </message>
     <message>
         <source>Invalid argument in config file</source>
@@ -45,7 +45,7 @@
     </message>
     <message>
         <source>Download Succeeded</source>
-        <translation type="unfinished"></translation>
+        <translation>Yedda usader</translation>
     </message>
     <message>
         <source>Download succeded</source>
@@ -53,7 +53,7 @@
     </message>
     <message>
         <source>[INFO] Yt-dlp command: </source>
-        <translation type="unfinished"></translation>
+        <translation>[TALƔUT] Aneẓday Yt-dlp: </translation>
     </message>
     <message>
         <source>[ERROR] QProcess failed with error code: </source>
@@ -68,74 +68,74 @@
     <name>downloadStatus</name>
     <message>
         <source>Dialog</source>
-        <translation type="unfinished"></translation>
+        <translation>Adiwenni</translation>
     </message>
     <message>
         <source>Downloading...</source>
-        <translation type="unfinished"></translation>
+        <translation>Asader...</translation>
     </message>
 </context>
 <context>
     <name>ytdl</name>
     <message>
         <source>ytdl</source>
-        <translation type="unfinished"></translation>
+        <translation>ytdl</translation>
     </message>
     <message>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Music&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Aẓawan&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <source>Audio</source>
-        <translation type="unfinished"></translation>
+        <translation>Ameslaw</translation>
     </message>
     <message>
         <source>Quality:</source>
-        <translation type="unfinished"></translation>
+        <translation>Taɣara:</translation>
     </message>
     <message>
         <source>Best</source>
-        <translation type="unfinished"></translation>
+        <translation>Taɣara yelhan</translation>
     </message>
     <message>
         <source>Good</source>
-        <translation type="unfinished"></translation>
+        <translation>Igerrez</translation>
     </message>
     <message>
         <source>Medium</source>
-        <translation type="unfinished"></translation>
+        <translation>Alemmas</translation>
     </message>
     <message>
         <source>Low</source>
-        <translation type="unfinished"></translation>
+        <translation>Drus</translation>
     </message>
     <message>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Amasal:</translation>
     </message>
     <message>
         <source>AAC</source>
-        <translation type="unfinished"></translation>
+        <translation>AAC</translation>
     </message>
     <message>
         <source>OGG</source>
-        <translation type="unfinished"></translation>
+        <translation>OGG</translation>
     </message>
     <message>
         <source>MP3</source>
-        <translation type="unfinished"></translation>
+        <translation>MP3</translation>
     </message>
     <message>
         <source>OPUS</source>
-        <translation type="unfinished"></translation>
+        <translation>OPUS</translation>
     </message>
     <message>
         <source>WAV</source>
-        <translation type="unfinished"></translation>
+        <translation>WAV</translation>
     </message>
     <message>
         <source>Video</source>
-        <translation type="unfinished"></translation>
+        <translation>Tavidyut</translation>
     </message>
     <message>
         <source>Max Resolution:</source>
@@ -143,27 +143,27 @@
     </message>
     <message>
         <source>4K</source>
-        <translation type="unfinished"></translation>
+        <translation>4K</translation>
     </message>
     <message>
         <source>1440p</source>
-        <translation type="unfinished"></translation>
+        <translation>1440p</translation>
     </message>
     <message>
         <source>1080p</source>
-        <translation type="unfinished"></translation>
+        <translation>1080p</translation>
     </message>
     <message>
         <source>720p</source>
-        <translation type="unfinished"></translation>
+        <translation>720p</translation>
     </message>
     <message>
         <source>480p</source>
-        <translation type="unfinished"></translation>
+        <translation>480p</translation>
     </message>
     <message>
         <source>360p</source>
-        <translation type="unfinished"></translation>
+        <translation>360p</translation>
     </message>
     <message>
         <source>Preferred Format:</source>
@@ -171,39 +171,39 @@
     </message>
     <message>
         <source>3GP</source>
-        <translation type="unfinished"></translation>
+        <translation>3GP</translation>
     </message>
     <message>
         <source>FLV</source>
-        <translation type="unfinished"></translation>
+        <translation>FLV</translation>
     </message>
     <message>
         <source>MP4</source>
-        <translation type="unfinished"></translation>
+        <translation>MP4</translation>
     </message>
     <message>
         <source>WEBM</source>
-        <translation type="unfinished"></translation>
+        <translation>WEBM</translation>
     </message>
     <message>
         <source>Enter URL:</source>
-        <translation type="unfinished"></translation>
+        <translation>Sekcem-d URL:</translation>
     </message>
     <message>
         <source>Playlist</source>
-        <translation type="unfinished"></translation>
+        <translation>Tabdart n tɣuri</translation>
     </message>
     <message>
         <source>Browse...</source>
-        <translation type="unfinished"></translation>
+        <translation>Inig...</translation>
     </message>
     <message>
         <source>Defaults</source>
-        <translation type="unfinished"></translation>
+        <translation>Imezwar</translation>
     </message>
     <message>
         <source>Download</source>
-        <translation type="unfinished"></translation>
+        <translation>Sader</translation>
     </message>
 </context>
 </TS>

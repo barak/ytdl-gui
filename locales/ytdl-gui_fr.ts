@@ -251,5 +251,49 @@
         <comment>Shortcut to enable/disable default button</comment>
         <translation>Ctrl+D</translation>
     </message>
+    <message>
+        <source>Smallest files</source>
+        <translation>Plus petits fichiers</translation>
+    </message>
+    <message>
+        <source>For old devices, smaller files and not widely compatible</source>
+        <translation>Pour les anciens appareils, plus petits fichiers et n’est pas toujours supporté</translation>
+    </message>
+    <message>
+        <source>Proprietary, bigger files and not widely compatible</source>
+        <translation>Propriétaire, plus gros fichiers et n’est pas supporté partout</translation>
+    </message>
+    <message>
+        <source>Best compatibility but proprietary</source>
+        <translation>Meilleure compatibilité mais propriétaire</translation>
+    </message>
+    <message>
+        <source>Smaller files and open-source</source>
+        <translation>Plus petits fichiers et libre</translation>
+    </message>
+    <message>
+        <source>Use website defaults settings</source>
+        <translation>Utiliser les paramètres par défaut du site</translation>
+    </message>
+    <message>
+        <source>Often not available, big files, only for powerful and high resolution devices (really bad for environment)</source>
+        <translation>Souvent indisponible, seulement pour des appareils puissants avec une haute résolution (très mauvais pour environnement)</translation>
+    </message>
+    <message>
+        <source>Bigger files (really bad for environment)</source>
+        <translation>Plus gros fichiers (très mauvais pour environnement)</translation>
+    </message>
+    <message>
+        <source>Best for large screen (high environmental impact)</source>
+        <translation>Meilleur pour les grand écrans (fort impact environnemental)</translation>
+    </message>
+    <message>
+        <source>Good for less powerful devices</source>
+        <translation>Bon pour les appareils moins puissants</translation>
+    </message>
+    <message>
+        <source>Better for the environment, smaller files</source>
+        <translation>Meilleur pour l’environnement, plus petits fichiers</translation>
+    </message>
 </context>
 </TS>

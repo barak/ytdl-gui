@@ -1,7 +1,7 @@
 Source: youtubedl-gui
 Section: web
 Maintainer: Barak A. Pearlmutter <bap@debian.org>
-Build-Depends: debhelper-compat (= 13),
+Build-Depends: debhelper-compat (= 14),
 	cmake,
 	qt6-base-dev, ffmpeg, yt-dlp
 Standards-Version: 4.7.4

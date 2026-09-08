@@ -1,3 +1,10 @@
+youtubedl-gui (4.5.4-1) unstable; urgency=medium
+
+  * new upstream version
+  * remove dh14-obsolete subst vars
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 08 Sep 2026 13:33:58 +0100
+
 youtubedl-gui (4.5.3-1) unstable; urgency=medium
 
   * new upstream version

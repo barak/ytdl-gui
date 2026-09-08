@@ -12,7 +12,7 @@ Vcs-Browser: https://salsa.debian.org/debian/ytdl-gui
 Package: youtubedl-gui
 Architecture: any
 Multi-Arch: foreign
-Depends: ${misc:Depends}, ${shlibs:Depends}, ffmpeg, yt-dlp
+Depends: ffmpeg, yt-dlp
 Description: GUI on yt-dlp (ie, youtube-dl) to download videos from a variety of sites
  Graphical interface to yt-dlp, the CLI for downloading videos
  from a variety of sites. Allows control of format, resolution, audio

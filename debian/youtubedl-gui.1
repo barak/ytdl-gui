@@ -1,0 +1,94 @@
+.TH YOUTUBEDL\-GUI 1 "September 2026" "youtubedl-gui 4.5.4" "User Commands"
+.SH NAME
+youtubedl\-gui \- graphical front end to yt\-dlp for downloading videos and audio
+.SH SYNOPSIS
+.B youtubedl\-gui
+.RI [ Qt-options ]
+.SH DESCRIPTION
+.B youtubedl\-gui
+is a simple graphical interface to
+.BR yt\-dlp (1),
+the command line program for downloading videos from a wide variety of
+sites.
+It presents a single window in which a URL is entered, a destination
+folder chosen, and the desired output selected; the download is then
+performed by
+.B yt\-dlp
+with post\-processing by
+.BR ffmpeg (1).
+.PP
+Two modes of operation are offered, on separate tabs of the window.
+In audio mode the video is downloaded and its sound track extracted,
+with a choice of audio format and quality, and metadata embedded in the
+resulting file.
+In video mode the video itself is kept, with a choice of container
+format and of maximum resolution, and the thumbnail and any subtitles
+optionally embedded.
+Whole playlists can be fetched rather than a single item.
+.PP
+Progress is shown while the download runs, and a download in progress
+can be cancelled.
+When the download finishes and the window is not the active one, a
+desktop notification is emitted using
+.BR notify\-send (1),
+if it is available; otherwise a dialogue box reports the outcome.
+.PP
+Checking the
+.B Defaults
+box leaves the format and quality selections to the website and to
+.BR yt\-dlp ,
+and greys out the corresponding controls.
+The settings in effect when the program exits, that box included, are
+written to the configuration file described below and restored on the
+next run.
+.PP
+The program takes no options of its own.
+Arguments are passed to Qt, so the standard Qt and X11 options such as
+.B \-style
+and
+.B \-\-platform
+are accepted.
+.SH ENVIRONMENT
+.TP
+.B QT_AUTO_SCREEN_SCALE_FACTOR
+Set this to
+.B 1
+for the window to scale correctly on a HiDPI display under GNOME and
+other GTK based desktops.
+Qt based desktops such as KDE apply their own scaling factor and need
+no such setting.
+.SH FILES
+.TP
+.I ~/.config/ytdl\-gui/ytdl\-gui.conf
+Settings saved when the program exits and restored when it starts.
+.TP
+.I ~/.config/ytdl\-gui/yt\-dlp.path
+If this file exists, its first line is used as the command to run
+instead of searching for
+.B yt\-dlp
+on the
+.BR PATH .
+This is useful when a newer
+.B yt\-dlp
+than the packaged one is installed elsewhere, for instance under
+.IR ~/.local/bin .
+.TP
+.I /tmp/ytdl_stderr
+Standard error of the most recent
+.B yt\-dlp
+run, shown in the dialogue reporting a failed download.
+.SH SEE ALSO
+.BR yt\-dlp (1),
+.BR ffmpeg (1),
+.BR notify\-send (1)
+.PP
+The upstream home page is
+.UR https://codeberg.org/impromptux/ytdl\-gui
+.UE .
+.SH AUTHOR
+.B youtubedl\-gui
+was written by Jason Goulet\-Lipman and is now maintained by
+Impromptux.
+.PP
+This manual page was written for the Debian project, and may be used by
+others.

@@ -1,3 +1,16 @@
+youtubedl-gui (4.5.4-2) unstable; urgency=medium
+
+  * point Homepage, upstream metadata, and copyright at new upstream
+    home on Codeberg
+  * update debian/copyright: current upstream maintainer, CC0-1.0
+    AppStream metainfo, debian/* stanza
+  * drop runtime-only ffmpeg and yt-dlp from Build-Depends
+  * Recommends: libnotify-bin, for download-complete notifications
+  * install AppStream metainfo
+  * remove dh_make template cruft from debian/rules
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Thu, 15 Oct 2026 17:31:15 +0100
+
 youtubedl-gui (4.5.4-1) unstable; urgency=medium
 
   * new upstream version

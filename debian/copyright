@@ -1,10 +1,21 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: youtubedl-gui
-Upstream-Contact: Jason Goulet-Lipman <jason.gouletlipman@gmail.com>
-Source: https://github.com/JaGoLi/ytdl-gui
+Upstream-Contact: Antoine Impromptux <impromptux@mailo.com>
+Source: https://codeberg.org/impromptux/ytdl-gui
 
 Files: *
 Copyright: 2021 Jason Goulet-Lipman <jason.gouletlipman@gmail.com>
+           2026 Antoine Impromptux <impromptux@mailo.com>
+License: GPL-3+
+
+Files: resources/flatpak/page.codeberg.impromptux.ytdl-gui.metainfo.xml
+Copyright: 2026 Antoine Impromptux <impromptux@mailo.com>
+License: CC0-1.0
+
+Files: debian/*
+Copyright: 2021-2026 Barak A. Pearlmutter <bap@debian.org>
+License: GPL-3+
+
 License: GPL-3+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -21,3 +32,12 @@ License: GPL-3+
  .
  On Debian systems, the complete text of the GNU General
  Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+
+License: CC0-1.0
+ To the extent possible under law, the author(s) have dedicated all
+ copyright and related and neighboring rights to this software to the
+ public domain worldwide. This software is distributed without any
+ warranty.
+ .
+ On Debian systems, the complete text of the CC0 1.0 Universal license
+ can be found in "/usr/share/common-licenses/CC0-1.0".

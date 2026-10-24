@@ -1,23 +1,24 @@
 # ytdl-gui
 A simple-to-use, cross-platform graphical interface for yt-dlp. This is a fork of [the original youtubedl-gui by JaGoLi](https://github.com/JaGoLi/ytdl-gui) that seems to be abandoned.<br/><br/>
 [![Get it on Flathub!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/flathub/get-it-on-flathub.png)](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui)
-[![Get it for Debian!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/debian/get-it-for-debian-ceratopsian.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Get it for Linux Mint!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/linuxmint/get-it-for-linuxmint.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Build it for ArchLinux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/arch/build-it-for-arch-linux-dark.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux) [![Get it for Alpine Linux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/alpine/get-it-for-alpine-linux.png)](https://codeberg.org/impromptux/-/packages/alpine/youtubedl-gui/) [![Get it for Ubuntu!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/ubuntu/get-it-for-ubuntu.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Get it for Fedora!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/fedora/get-it-for-fedora.png)](https://codeberg.org/impromptux/-/packages/rpm/youtubedl-gui/4.5.4-2)<br/>
+[![Get it for Debian!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/debian/get-it-for-debian-ceratopsian.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Get it for Linux Mint!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/linuxmint/get-it-for-linuxmint.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Build it for ArchLinux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/arch/build-it-for-arch-linux-dark.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux) [![Get it for Alpine Linux](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/alpine/get-it-for-alpine-linux.png)](https://codeberg.org/impromptux/-/packages/alpine/youtubedl-gui/) [![Get it for Ubuntu!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/ubuntu/get-it-for-ubuntu.png)](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian) [![Get it for Fedora!](https://codeberg.org/impromptux/install-badges/raw/branch/main/badges/fedora/get-it-for-fedora.png)](https://codeberg.org/impromptux/-/packages/rpm/youtubedl-gui/)<br/>
 ![youtubedl-gui-screenshot.png](https://codeberg.org/impromptux/ytdl-gui/raw/branch/master/resources/youtubedl-gui-screenshot-3.0.png) <br/>
 
 
 ## Installation Instructions
-There are official packages for Debian and Alpine based distro.
+There are official packages for Debian, Fedora and Alpine based distro.
 If you prefer you can also build from sources (see below) or use flatpak.
+### Debian and Ubuntu
+For a system running Debian, Ubuntu, Linux Mint, LMDE or any Debian-based linux distribution install instruction are [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian).
+
 ### Arch linux and Manjaro
 You can build it for Arch Linux and Arch Linux-based distribution by folowing the instructions [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Building-for-Arch-Linux).
 There are also packages of the original youtubedl-gui for arch-based linux distros (using the aur).
 
-### Debian and Ubuntu
-For a system running Debian, Ubuntu, Linux Mint, LMDE or any Debian-based linux distribution install instruction are [here](https://codeberg.org/impromptux/ytdl-gui/wiki/Install-on-Debian).
-
 ### Flatpak
 It is also possible to install the application via Flatpak but the app may take longer time to start and the size of the update will be much greater. Please note that Flatpak's security features also make apps less vulnerable to security breaches.<br/>
 You can find the app on Flathub [here](https://flathub.org/en/apps/page.codeberg.impromptux.ytdl-gui).
+If possible, we recommend you to use instead one of the official packages as the Flatpak is sometime quite outdated.
 
 ### Alpine Linux
 There are official packages for Alpine available [here](https://codeberg.org/impromptux/-/packages/alpine/youtubedl-gui/) but they are quite outdated. There is also a pending merge request to include youtubedl-gui in the Alpine Linux community repo.<br/>

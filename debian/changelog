@@ -1,3 +1,9 @@
+youtubedl-gui (4.5.5-1) unstable; urgency=medium
+
+  * new upstream version
+
+ -- Barak A. Pearlmutter <bap@debian.org>  Tue, 27 Oct 2026 18:11:48 +0000
+
 youtubedl-gui (4.5.4-2) unstable; urgency=medium
 
   * point Homepage, upstream metadata, and copyright at new upstream

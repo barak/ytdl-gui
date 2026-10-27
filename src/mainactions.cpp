@@ -25,7 +25,7 @@ mainActions::mainActions(QObject *parent) : QObject(parent)	{
         ytdl* window = ytdl::getWinInstance();
         Ui::ytdl* ui = ytdl::getUiInstance();
 
-        connect(ui->buttonDownload, &QPushButton::released, window, &ytdl::downloadAction);
+        connect(ui->buttonDownload, &QPushButton::clicked, window, &ytdl::downloadAction);
 
         //connect enter to downloadAction
         QShortcut* returnAction = new QShortcut(QKeySequence("Return"), window);
@@ -221,7 +221,7 @@ void ytdl::printResult(int result_num) {
                 if (!no_feedback && is_active) {
                     success.exec();
                 } else {
-                    system(("notify-send --icon page.codeberg.impromptux.ytdl-gui \"" + QCoreApplication::tr("Yt Downloader").toStdString() + "\" \"" + QCoreApplication::tr("Download succeded").toStdString() + "\" >/dev/null 2>&1 &").c_str());
+                    system(("notify-send --icon page.codeberg.impromptux.ytdl-gui \"" + QCoreApplication::tr("Yt Downloader").toStdString() + "\" \"" + QCoreApplication::tr("Download Succeeded").toStdString() + "\" >/dev/null 2>&1 &").c_str());
                 }
 
                 emit userAccepted();
@@ -255,6 +255,7 @@ void ytdl::printResult(int result_num) {
 }
 
 void ytdl::downloadAction() {
+    ui->buttonDownload->setEnabled(false);
     std::string ytdl_prog;
     std::string embed_metadata;
     std::ifstream fio("/tmp/ytdl_stderr", std::ios::in);
@@ -285,7 +286,7 @@ void ytdl::downloadAction() {
         directory_path.replace(pos, 1, escaped_quote);
         pos += escaped_quote.length();  // Move past the replaced text
     }
-    std::string directory_str = quote + directory_path + "/%(title)s.%(ext)s" + quote;
+    std::string directory_str = quote + directory_path + "/%(title).200B.%(ext)s" + quote;
     std::string parse_output = R"(stdbuf -o0 grep -oP '^\[download\].*?\K([0-9]+)')";
     std::string thumbnail;
     std::string embed_subs;
@@ -426,5 +427,6 @@ void ytdl::downloadAction() {
             this->run_ytdl(command);
         }
     }
+    ui->buttonDownload->setEnabled(true);
 
 }
